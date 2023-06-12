@@ -163,13 +163,7 @@ paths:
         filename: get-application-consistency-groups-snapshots-.html
         subcategory: Manage application consistency group Snapshot copies
         explorer: false
-    patch:
-      x-doc:
-        title: Complete a consistency group Snapshot copy operation
-        category: application
-        filename: patch-application-consistency-groups-snapshots-.html
-        subcategory: Manage application consistency group Snapshot copies
-        explorer: false
+   
   "/application/consistency-groups/{uuid}":
     delete:
       x-doc:
