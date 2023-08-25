@@ -1926,38 +1926,7 @@ paths:
         subcategory: Manage network IPspaces
         explorer: false
 
-  
-
-  "/protocols/active-directory/{svm.uuid}/preferred-domain-controllers":
-    get:
-      x-doc:
-        title: Retrieve Active Directory preferred DC configuration for an SVM
-        category: NAS
-        filename: get-protocols-active-directory-preferred-domain-controllers.html
-        subcategory: Manage Active Directory domain controllers 
-        explorer: false
-    post:
-      x-doc:
-        title: Create an Active Directory preferred DC configuration for an SVM
-        category: NAS
-        filename: post-protocols-active-directory-preferred-domain-controllers.html
-        subcategory: Manage Active Directory domain controllers 
-        explorer: false
-  "/protocols/active-directory/{svm.uuid}/preferred-domain-controllers/{fqdn}/{server_ip}":
-    delete:
-      x-doc:
-        title: Delete Active Directory preferred DC configuration for an SVM and domain
-        category: NAS
-        filename: delete-protocols-active-directory-preferred-domain-controllers-.html
-        subcategory: Manage Active Directory domain controllers 
-        explorer: false
-    get:
-      x-doc:
-        title: Retrieve Active Directory preferred DC configuration for an SVM and domain
-        category: NAS
-        filename: get-protocols-active-directory-preferred-domain-controllers-.html
-        subcategory: Manage Active Directory domain controllers 
-        explorer: false
+ 
   "/protocols/audit":
     get:
       x-doc:
@@ -2078,94 +2047,8 @@ paths:
         filename: get-protocols-cifs-domains-preferred-domain-controllers-.html
         subcategory: Manage CIFS DC configuration
         explorer: false
-  "/protocols/cifs/group-policies":
-    get:
-      x-doc:
-        title: Retrieve unapplied group policy objects for all SVMs
-        category: NAS
-        filename: get-protocols-cifs-group-policies.html
-        subcategory: Manage CIFS DC configuration
-        explorer: false
-  "/protocols/cifs/group-policies/{svm.uuid}":
-    get:
-      x-doc:
-        title: Retrieve unapplied group policy objects for an SVM
-        category: NAS
-        filename: get-protocols-cifs-group-policies-.html
-        subcategory: Manage CIFS DC configuration
-        explorer: false
-    patch:
-      x-doc:
-        title: Create a background task to update the GPO settings for an SVM
-        category: NAS
-        filename: patch-protocols-cifs-group-policies-.html
-        subcategory: Manage CIFS DC configuration
-        explorer: false
-  "/protocols/cifs/group-policies/{svm.uuid}/central-access-policies":
-    get:
-      x-doc:
-        title: Retrieve applied central access policies for an SVM
-        category: NAS
-        filename: get-protocols-cifs-group-policies-central-access-policies.html
-        subcategory: Manage CIFS DC configuration
-        explorer: false
-  "/protocols/cifs/group-policies/{svm.uuid}/central-access-policies/{name}":
-    get:
-      x-doc:
-        title: Retrieve an applied central access policy for an SVM
-        category: NAS
-        filename: get-protocols-cifs-group-policies-central-access-policies-.html
-        subcategory: Manage CIFS DC configuration
-        explorer: false
-  "/protocols/cifs/group-policies/{svm.uuid}/central-access-rules":
-    get:
-      x-doc:
-        title: Retrieve applied central access rules for an SVM
-        category: NAS
-        filename: get-protocols-cifs-group-policies-central-access-rules.html
-        subcategory: Manage CIFS DC configuration
-        explorer: false
-  "/protocols/cifs/group-policies/{svm.uuid}/central-access-rules/{name}":
-    get:
-      x-doc:
-        title: Retrieve an applied central access rule for an SVM
-        category: NAS
-        filename: get-protocols-cifs-group-policies-central-access-rules-.html
-        subcategory: Manage CIFS DC configuration
-        explorer: false
-  "/protocols/cifs/group-policies/{svm.uuid}/objects":
-    get:
-      x-doc:
-        title: Retrieve applied group policy objects for an SVM
-        category: NAS
-        filename: get-protocols-cifs-group-policies-objects.html
-        subcategory: View group policy objects 
-        explorer: false
-  "/protocols/cifs/group-policies/{svm.uuid}/objects/{index}":
-    get:
-      x-doc:
-        title: Retrieve an applied group policy object for an SVM
-        category: NAS
-        filename: get-protocols-cifs-group-policies-objects-.html
-        subcategory: View group policy objects 
-        explorer: false
-  "/protocols/cifs/group-policies/{svm.uuid}/restricted-groups":
-    get:
-      x-doc:
-        title: Retrieve applied restricted group policies for an SVM
-        category: NAS
-        filename: get-protocols-cifs-group-policies-restricted-groups.html
-        subcategory: View group policy objects 
-        explorer: false
-        
-  "/protocols/cifs/group-policies/{svm.uuid}/restricted-groups/{policy_index}/{group_name}":
-    get:
-      x-doc:
-        title: Retrieve an applied restricted group policy for an SVM
-        category: NAS
-        filename: get-protocols-cifs-group-policies-restricted-groups-.html
-        subcategory: View group policy objects 
-        explorer: false
+  
+
   "/protocols/cifs/home-directory/search-paths":
     get:
       x-doc:
@@ -2974,21 +2857,7 @@ paths:
         filename: get-protocols-nfs-connected-client-maps.html
         subcategory: View NFS client information
         explorer: false
-  "/protocols/nfs/connected-client-settings":
-    get:
-      x-doc:
-        title: Retrieve NFS connected-client cache settings for a cluster
-        category: NAS
-        filename: get-protocols-nfs-connected-client-settings.html
-        subcategory: View and update NFS client settings
-        explorer: false
-    patch:
-      x-doc:
-        title: Update NFS connected-client cache settings properties
-        category: NAS
-        filename: patch-protocols-nfs-connected-client-settings.html
-        subcategory: View and update NFS client settings
-        explorer: false
+  
   "/protocols/nfs/connected-clients":
     get:
       x-doc:
@@ -4464,67 +4333,10 @@ paths:
         filename: patch-security-authentication-publickeys--.html
         subcategory: Manage authentication keys (end-users)
         explorer: false
-  "/security/aws-kms":
-    get:
-      x-doc:
-        title: Retrieve all AWS KMS instances configured for all clusters and SVMs
-        category: security
-        filename: get-security-aws-kms.html
-        subcategory: Manage AWS KMS 
-        explorer: false
-    post:
-      x-doc:
-        title: Configure the AWS KMS configuration for an SVM
-        category: security
-        filename: post-security-aws-kms.html
-        subcategory: Manage AWS KMS 
-        explorer: false
-  "/security/aws-kms/{aws_kms.uuid}/rekey-external":
-    post:
-      x-doc:
-        title: Re-key or re-version an AWS KMS key encryption key for AWS KMS
-        category: security
-        filename: post-security-aws-kms-rekey-external.html
-        subcategory: Manage AWS KMS 
-        explorer: false
-  "/security/aws-kms/{aws_kms.uuid}/rekey-internal":
-    post:
-      x-doc:
-        title: Re-key SVM KEK for an AWS KMS
-        category: security
-        filename: post-security-aws-kms-rekey-internal.html
-        subcategory: Manage AWS KMS 
-        explorer: false
-  "/security/aws-kms/{aws_kms.uuid}/restore":
-    post:
-      x-doc:
-        title: Restore keys for an SVM from a configured AWS KMS
-        category: security
-        filename: post-security-aws-kms-restore.html
-        subcategory: Manage AWS KMS 
-        explorer: false
-  "/security/aws-kms/{uuid}":
-    delete:
-      x-doc:
-        title: Delete an AWS KMS configuration
-        category: security
-        filename: delete-security-aws-kms-.html
-        subcategory: Manage AWS KMS 
-        explorer: false
-    get:
-      x-doc:
-        title: Retrieve an AWS KMS configuration 
-        category: security
-        filename: get-security-aws-kms-.html
-        subcategory: Manage AWS KMS 
-        explorer: false
-    patch:
-      x-doc:
-        title: Update an AWS KMS configuration
-        category: security
-        filename: patch-security-aws-kms-.html
-        subcategory: Manage AWS KMS 
-        explorer: false
+
+
+  
+
   "/security/azure-key-vaults":
     get:
       x-doc:
@@ -4825,36 +4637,8 @@ paths:
         filename: post-security-key-managers.html
         subcategory: Manage key managers
         explorer: false
-  "/security/key-managers/{security_key_manager.uuid}/auth-keys":
-    get:
-      x-doc:
-        title: Retrieve authentication keys associated with the admin SVM
-        category: security
-        filename: get-security-key-managers-auth-keys.html
-        subcategory: Manage authentication keys
-        explorer: false
-    post:
-      x-doc:
-        title: Create an authentication key
-        category: security
-        filename: post-security-key-managers-auth-keys.html
-        subcategory: Manage authentication keys
-        explorer: false
-  "/security/key-managers/{security_key_manager.uuid}/auth-keys/{key_id}":
-    delete:
-      x-doc:
-        title: Delete an authentication key
-        category: security
-        filename: delete-security-key-managers-auth-keys-.html
-        subcategory: Manage authentication keys
-        explorer: false
-    get:
-      x-doc:
-        title: List all authentication keys associated with the admin SVM
-        category: security
-        filename: get-security-key-managers-auth-keys-.html
-        subcategory: Manage authentication keys
-        explorer: false
+
+ 
   "/security/key-managers/{security_key_manager.uuid}/keys/{node.uuid}/key-ids":
     get:
       x-doc:
@@ -5552,14 +5336,7 @@ paths:
         filename: post-storage-file-moves.html
         subcategory: Manage storage file moves
         explorer: false
-  "/storage/file/moves/{node.uuid}/{uuid}/{index}":
-    get:
-      x-doc:
-        title: Check the status of an active file move operation
-        category: storage
-        filename: get-storage-file-moves--.html
-        subcategory: Manage storage file moves
-        explorer: false
+  
   "/storage/flexcache/flexcaches":
     get:
       x-doc:
