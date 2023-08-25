@@ -1926,43 +1926,8 @@ paths:
         subcategory: Manage network IPspaces
         explorer: false
 
-  "/protocols/active-directory":
-    get:
-      x-doc:
-        title: Retrieve Active Directory accounts for all SVMs
-        category: NAS
-        filename: get-protocols-active-directory.html
-        subcategory: Manage Active Directory accounts
-        explorer: false
-    post:
-      x-doc:
-        title: Create an Active Directory account for an SVM
-        category: NAS
-        filename: post-protocols-active-directory.html
-        subcategory: Manage Active Directory accounts
-        explorer: false
-  "/protocols/active-directory/{svm.uuid}":
-    delete:
-      x-doc:
-        title: Delete an Active Directory account for an SVM
-        category: NAS
-        filename: delete-protocols-active-directory-.html
-        subcategory: Manage Active Directory accounts for an SVM
-        explorer: false
-    get:
-      x-doc:
-        title: Retrieve an Active Directory account for an SVM
-        category: NAS
-        filename: get-protocols-active-directory-.html
-        subcategory: Manage Active Directory accounts for an SVM
-        explorer: false
-    patch:
-      x-doc:
-        title: Modify an Active Directory account for an SVM 
-        category: NAS
-        filename: patch-protocols-active-directory-.html
-        subcategory: Manage Active Directory accounts for an SVM
-        explorer: false
+  
+
   "/protocols/active-directory/{svm.uuid}/preferred-domain-controllers":
     get:
       x-doc:
