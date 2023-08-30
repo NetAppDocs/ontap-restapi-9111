@@ -794,6 +794,7 @@ paths:
         title: Retrieve environment sensors for a node
         category: cluster
         filename: get-cluster-sensors-.html
+        subcategory: Manage cluster sensors
         explorer: false
   "/cluster/software":
     get:
