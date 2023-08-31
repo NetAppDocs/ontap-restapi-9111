@@ -163,13 +163,7 @@ paths:
         filename: get-application-consistency-groups-snapshots-.html
         subcategory: Manage application consistency group Snapshot copies
         explorer: false
-    patch:
-      x-doc:
-        title: Complete a consistency group Snapshot copy operation
-        category: application
-        filename: patch-application-consistency-groups-snapshots-.html
-        subcategory: Manage application consistency group Snapshot copies
-        explorer: false
+   
   "/application/consistency-groups/{uuid}":
     delete:
       x-doc:
@@ -198,7 +192,7 @@ paths:
         title: Retrieve application templates
         category: application
         filename: get-application-templates.html
-        subcategory: View application templates
+        subcategory: 
         explorer: false
   "/application/templates/{name}":
     get:
@@ -206,7 +200,7 @@ paths:
         title: Retrieve an application template
         category: application
         filename: get-application-templates-.html
-        subcategory: View application templates
+        subcategory: 
         explorer: false
   "/cloud/targets":
     get:
@@ -792,7 +786,7 @@ paths:
         title: Retrieve environment sensors
         category: cluster
         filename: get-cluster-sensors.html
-        subcategory: Retrieve cluster sensors
+        subcategory: 
         explorer: false
   "/cluster/sensors/{node.uuid}/{index}":
     get:
@@ -800,6 +794,7 @@ paths:
         title: Retrieve environment sensors for a node
         category: cluster
         filename: get-cluster-sensors-.html
+        subcategory: Manage cluster sensors
         explorer: false
   "/cluster/software":
     get:
@@ -1549,7 +1544,7 @@ paths:
   "/network/fc/interfaces":
     get:
       x-doc:
-        title: Retrieves FC interfaces
+        title: Retrieve FC interfaces
         category: networking
         filename: get-network-fc-interfaces.html
         subcategory: Manage FC network interfaces
@@ -1932,73 +1927,7 @@ paths:
         subcategory: Manage network IPspaces
         explorer: false
 
-  "/protocols/active-directory":
-    get:
-      x-doc:
-        title: Retrieve Active Directory accounts for all SVMs
-        category: NAS
-        filename: get-protocols-active-directory.html
-        subcategory: Manage Active Directory accounts
-        explorer: false
-    post:
-      x-doc:
-        title: Create an Active Directory account for an SVM
-        category: NAS
-        filename: post-protocols-active-directory.html
-        subcategory: Manage Active Directory accounts
-        explorer: false
-  "/protocols/active-directory/{svm.uuid}":
-    delete:
-      x-doc:
-        title: Delete an Active Directory account for an SVM
-        category: NAS
-        filename: delete-protocols-active-directory-.html
-        subcategory: Manage Active Directory accounts for an SVM
-        explorer: false
-    get:
-      x-doc:
-        title: Retrieve an Active Directory account for an SVM
-        category: NAS
-        filename: get-protocols-active-directory-.html
-        subcategory: Manage Active Directory accounts for an SVM
-        explorer: false
-    patch:
-      x-doc:
-        title: Modify an Active Directory account for an SVM 
-        category: NAS
-        filename: patch-protocols-active-directory-.html
-        subcategory: Manage Active Directory accounts for an SVM
-        explorer: false
-  "/protocols/active-directory/{svm.uuid}/preferred-domain-controllers":
-    get:
-      x-doc:
-        title: Retrieve Active Directory preferred DC configuration for an SVM
-        category: NAS
-        filename: get-protocols-active-directory-preferred-domain-controllers.html
-        subcategory: Manage Active Directory domain controllers 
-        explorer: false
-    post:
-      x-doc:
-        title: Create an Active Directory preferred DC configuration for an SVM
-        category: NAS
-        filename: post-protocols-active-directory-preferred-domain-controllers.html
-        subcategory: Manage Active Directory domain controllers 
-        explorer: false
-  "/protocols/active-directory/{svm.uuid}/preferred-domain-controllers/{fqdn}/{server_ip}":
-    delete:
-      x-doc:
-        title: Delete Active Directory preferred DC configuration for an SVM and domain
-        category: NAS
-        filename: delete-protocols-active-directory-preferred-domain-controllers-.html
-        subcategory: Manage Active Directory domain controllers 
-        explorer: false
-    get:
-      x-doc:
-        title: Retrieve Active Directory preferred DC configuration for an SVM and domain
-        category: NAS
-        filename: get-protocols-active-directory-preferred-domain-controllers-.html
-        subcategory: Manage Active Directory domain controllers 
-        explorer: false
+ 
   "/protocols/audit":
     get:
       x-doc:
@@ -2119,94 +2048,8 @@ paths:
         filename: get-protocols-cifs-domains-preferred-domain-controllers-.html
         subcategory: Manage CIFS DC configuration
         explorer: false
-  "/protocols/cifs/group-policies":
-    get:
-      x-doc:
-        title: Retrieve unapplied group policy objects for all SVMs
-        category: NAS
-        filename: get-protocols-cifs-group-policies.html
-        subcategory: Manage CIFS DC configuration
-        explorer: false
-  "/protocols/cifs/group-policies/{svm.uuid}":
-    get:
-      x-doc:
-        title: Retrieve unapplied group policy objects for an SVM
-        category: NAS
-        filename: get-protocols-cifs-group-policies-.html
-        subcategory: Manage CIFS DC configuration
-        explorer: false
-    patch:
-      x-doc:
-        title: Create a background task to update the GPO settings for an SVM
-        category: NAS
-        filename: patch-protocols-cifs-group-policies-.html
-        subcategory: Manage CIFS DC configuration
-        explorer: false
-  "/protocols/cifs/group-policies/{svm.uuid}/central-access-policies":
-    get:
-      x-doc:
-        title: Retrieve applied central access policies for an SVM
-        category: NAS
-        filename: get-protocols-cifs-group-policies-central-access-policies.html
-        subcategory: Manage CIFS DC configuration
-        explorer: false
-  "/protocols/cifs/group-policies/{svm.uuid}/central-access-policies/{name}":
-    get:
-      x-doc:
-        title: Retrieve an applied central access policy for an SVM
-        category: NAS
-        filename: get-protocols-cifs-group-policies-central-access-policies-.html
-        subcategory: Manage CIFS DC configuration
-        explorer: false
-  "/protocols/cifs/group-policies/{svm.uuid}/central-access-rules":
-    get:
-      x-doc:
-        title: Retrieve applied central access rules for an SVM
-        category: NAS
-        filename: get-protocols-cifs-group-policies-central-access-rules.html
-        subcategory: Manage CIFS DC configuration
-        explorer: false
-  "/protocols/cifs/group-policies/{svm.uuid}/central-access-rules/{name}":
-    get:
-      x-doc:
-        title: Retrieve an applied central access rule for an SVM
-        category: NAS
-        filename: get-protocols-cifs-group-policies-central-access-rules-.html
-        subcategory: Manage CIFS DC configuration
-        explorer: false
-  "/protocols/cifs/group-policies/{svm.uuid}/objects":
-    get:
-      x-doc:
-        title: Retrieve applied group policy objects for an SVM
-        category: NAS
-        filename: get-protocols-cifs-group-policies-objects.html
-        subcategory: View group policy objects 
-        explorer: false
-  "/protocols/cifs/group-policies/{svm.uuid}/objects/{index}":
-    get:
-      x-doc:
-        title: Retrieve an applied group policy object for an SVM
-        category: NAS
-        filename: get-protocols-cifs-group-policies-objects-.html
-        subcategory: View group policy objects 
-        explorer: false
-  "/protocols/cifs/group-policies/{svm.uuid}/restricted-groups":
-    get:
-      x-doc:
-        title: Retrieve applied restricted group policies for an SVM
-        category: NAS
-        filename: get-protocols-cifs-group-policies-restricted-groups.html
-        subcategory: View group policy objects 
-        explorer: false
-        
-  "/protocols/cifs/group-policies/{svm.uuid}/restricted-groups/{policy_index}/{group_name}":
-    get:
-      x-doc:
-        title: Retrieve an applied restricted group policy for an SVM
-        category: NAS
-        filename: get-protocols-cifs-group-policies-restricted-groups-.html
-        subcategory: View group policy objects 
-        explorer: false
+  
+
   "/protocols/cifs/home-directory/search-paths":
     get:
       x-doc:
@@ -2360,7 +2203,7 @@ paths:
   "/protocols/cifs/netbios":
     get:
       x-doc:
-        title: Retrieve NetBios information
+        title: Retrieve NetBIOS information
         category: NAS
         filename: get-protocols-cifs-netbios.html
         subcategory: View NetBIOS information
@@ -3015,21 +2858,7 @@ paths:
         filename: get-protocols-nfs-connected-client-maps.html
         subcategory: View NFS client information
         explorer: false
-  "/protocols/nfs/connected-client-settings":
-    get:
-      x-doc:
-        title: Retrieve NFS connected-client cache settings for a cluster
-        category: NAS
-        filename: get-protocols-nfs-connected-client-settings.html
-        subcategory: View and update NFS client settings
-        explorer: false
-    patch:
-      x-doc:
-        title: Update NFS connected-client cache settings properties
-        category: NAS
-        filename: patch-protocols-nfs-connected-client-settings.html
-        subcategory: View and update NFS client settings
-        explorer: false
+  
   "/protocols/nfs/connected-clients":
     get:
       x-doc:
@@ -3198,7 +3027,7 @@ paths:
   "/protocols/nfs/services":
     get:
       x-doc:
-        title: Retrieves NFS configuration for SVMs
+        title: Retrieve NFS configuration for SVMs
         category: NAS
         filename: get-protocols-nfs-services.html
         subcategory: Manage NFS services
@@ -3703,14 +3532,14 @@ paths:
         title: Retrieve initiator groups
         category: SAN
         filename: get-protocols-san-igroups.html
-        subcategory: Manage SAN iGroups
+        subcategory: Manage SAN igroups
         explorer: false
     post:
       x-doc:
         title: Create an initiator group
         category: SAN
         filename: post-protocols-san-igroups.html
-        subcategory: Manage SAN iGroups
+        subcategory: Manage SAN igroups
         explorer: false
   "/protocols/san/igroups/{igroup.uuid}/igroups":
     get:
@@ -3718,14 +3547,14 @@ paths:
         title: Retrieve nested initiator groups of an initiator group
         category: SAN
         filename: get-protocols-san-igroups-igroups.html
-        subcategory: Manage SAN iGroups
+        subcategory: Manage SAN igroups
         explorer: false
     post:
       x-doc:
         title: Add nested initiator groups to an initiator group
         category: SAN
         filename: post-protocols-san-igroups-igroups.html
-        subcategory: Manage SAN iGroups
+        subcategory: Manage SAN igroups
         explorer: false
   "/protocols/san/igroups/{igroup.uuid}/igroups/{uuid}":
     delete:
@@ -3733,14 +3562,14 @@ paths:
         title: Remove a nested initiator group from an initiator group
         category: SAN
         filename: delete-protocols-san-igroups-igroups-.html
-        subcategory: Manage SAN iGroups
+        subcategory: Manage SAN igroups
         explorer: false
     get:
       x-doc:
         title: Retrieve a nested initiator group of an initiator group
         category: SAN
         filename: get-protocols-san-igroups-igroups-.html
-        subcategory: Manage SAN iGroups
+        subcategory: Manage SAN igroups
         explorer: false
   "/protocols/san/igroups/{igroup.uuid}/initiators":
     get:
@@ -3748,14 +3577,14 @@ paths:
         title: Retrieve initiators of an initiator group
         category: SAN
         filename: get-protocols-san-igroups-initiators.html
-        subcategory: Manage SAN iGroups
+        subcategory: Manage SAN igroups
         explorer: false
     post:
       x-doc:
         title: Add initiators to an initiator group
         category: SAN
         filename: post-protocols-san-igroups-initiators.html
-        subcategory: Manage SAN iGroups
+        subcategory: Manage SAN igroups
         explorer: false
   "/protocols/san/igroups/{igroup.uuid}/initiators/{name}":
     delete:
@@ -3763,21 +3592,21 @@ paths:
         title: Delete an initiator from an initiator group
         category: SAN
         filename: delete-protocols-san-igroups-initiators-.html
-        subcategory: Manage SAN iGroups
+        subcategory: Manage SAN igroups
         explorer: false
     get:
       x-doc:
         title: Retrieve an initiator 
         category: SAN
         filename: get-protocols-san-igroups-initiators-.html
-        subcategory: Manage SAN iGroups
+        subcategory: Manage SAN igroups
         explorer: false
     patch:
       x-doc:
         title: Update an initiator 
         category: SAN
         filename: patch-protocols-san-igroups-initiators-.html
-        subcategory: Manage SAN iGroups
+        subcategory: Manage SAN igroups
         explorer: false
   "/protocols/san/igroups/{uuid}":
     delete:
@@ -3785,21 +3614,21 @@ paths:
         title: Delete an initiator group
         category: SAN
         filename: delete-protocols-san-igroups-.html
-        subcategory: Manage SAN iGroups
+        subcategory: Manage SAN igroups
         explorer: false
     get:
       x-doc:
         title: Retrieve an initiator group
         category: SAN
         filename: get-protocols-san-igroups-.html
-        subcategory: Manage SAN iGroups
+        subcategory: Manage SAN igroups
         explorer: false
     patch:
       x-doc:
         title: Update an initiator group
         category: SAN
         filename: patch-protocols-san-igroups-.html
-        subcategory: Manage SAN iGroups
+        subcategory: Manage SAN igroups
         explorer: false
   "/protocols/san/iscsi/credentials":
     get:
@@ -3966,14 +3795,14 @@ paths:
         title: Retrieve portsets
         category: SAN
         filename: get-protocols-san-portsets.html
-        subcategory: Manage SAN postSets
+        subcategory: Manage SAN portsets
         explorer: false
     post:
       x-doc:
         title: Create a portset
         category: SAN
         filename: post-protocols-san-portsets.html
-        subcategory: Manage SAN postSets
+        subcategory: Manage SAN portsets
         explorer: false
   "/protocols/san/portsets/{portset.uuid}/interfaces":
     get:
@@ -3981,14 +3810,14 @@ paths:
         title: Retrieve portset network interfaces
         category: SAN
         filename: get-protocols-san-portsets-interfaces.html
-        subcategory: Manage SAN postSets
+        subcategory: Manage SAN portsets
         explorer: false
     post:
       x-doc:
         title: Add portset network interfaces
         category: SAN
         filename: post-protocols-san-portsets-interfaces.html
-        subcategory: Manage SAN postSets
+        subcategory: Manage SAN portsets
         explorer: false
   "/protocols/san/portsets/{portset.uuid}/interfaces/{uuid}":
     delete:
@@ -3996,14 +3825,14 @@ paths:
         title: Delete portset network interfaces
         category: SAN
         filename: delete-protocols-san-portsets-interfaces-.html
-        subcategory: Manage SAN postSets
+        subcategory: Manage SAN portsets
         explorer: false
     get:
       x-doc:
         title: Retrieve specific portset network interfaces
         category: SAN
         filename: get-protocols-san-portsets-interfaces-.html
-        subcategory: Manage SAN postSets
+        subcategory: Manage SAN portsets
         explorer: false
   "/protocols/san/portsets/{uuid}":
     delete:
@@ -4011,14 +3840,14 @@ paths:
         title: Delete a portset
         category: SAN
         filename: delete-protocols-san-portsets-.html
-        subcategory: Manage SAN postSets
+        subcategory: Manage SAN portsets
         explorer: false
     get:
       x-doc:
         title: Retrieve a portset
         category: SAN
         filename: get-protocols-san-portsets-.html
-        subcategory: Manage SAN postSets
+        subcategory: Manage SAN portsets
         explorer: false
   "/protocols/san/vvol-bindings":
     get:
@@ -4505,67 +4334,10 @@ paths:
         filename: patch-security-authentication-publickeys--.html
         subcategory: Manage authentication keys (end-users)
         explorer: false
-  "/security/aws-kms":
-    get:
-      x-doc:
-        title: Retrieve all AWS KMS instances configured for all clusters and SVMs
-        category: security
-        filename: get-security-aws-kms.html
-        subcategory: Manage AWS KMS 
-        explorer: false
-    post:
-      x-doc:
-        title: Configure the AWS KMS configuration for an SVM
-        category: security
-        filename: post-security-aws-kms.html
-        subcategory: Manage AWS KMS 
-        explorer: false
-  "/security/aws-kms/{aws_kms.uuid}/rekey-external":
-    post:
-      x-doc:
-        title: Re-key or re-version an AWS KMS key encryption key for AWS KMS
-        category: security
-        filename: post-security-aws-kms-rekey-external.html
-        subcategory: Manage AWS KMS 
-        explorer: false
-  "/security/aws-kms/{aws_kms.uuid}/rekey-internal":
-    post:
-      x-doc:
-        title: Re-key SVM KEK for an AWS KMS
-        category: security
-        filename: post-security-aws-kms-rekey-internal.html
-        subcategory: Manage AWS KMS 
-        explorer: false
-  "/security/aws-kms/{aws_kms.uuid}/restore":
-    post:
-      x-doc:
-        title: Restore keys for an SVM from a configured AWS KMS
-        category: security
-        filename: post-security-aws-kms-restore.html
-        subcategory: Manage AWS KMS 
-        explorer: false
-  "/security/aws-kms/{uuid}":
-    delete:
-      x-doc:
-        title: Delete an AWS KMS configuration
-        category: security
-        filename: delete-security-aws-kms-.html
-        subcategory: Manage AWS KMS 
-        explorer: false
-    get:
-      x-doc:
-        title: Retrieve an AWS KMS configuration 
-        category: security
-        filename: get-security-aws-kms-.html
-        subcategory: Manage AWS KMS 
-        explorer: false
-    patch:
-      x-doc:
-        title: Update an AWS KMS configuration
-        category: security
-        filename: patch-security-aws-kms-.html
-        subcategory: Manage AWS KMS 
-        explorer: false
+
+
+  
+
   "/security/azure-key-vaults":
     get:
       x-doc:
@@ -4866,36 +4638,8 @@ paths:
         filename: post-security-key-managers.html
         subcategory: Manage key managers
         explorer: false
-  "/security/key-managers/{security_key_manager.uuid}/auth-keys":
-    get:
-      x-doc:
-        title: Retrieve authentication keys associated with the admin SVM
-        category: security
-        filename: get-security-key-managers-auth-keys.html
-        subcategory: Manage authentication keys
-        explorer: false
-    post:
-      x-doc:
-        title: Create an authentication key
-        category: security
-        filename: post-security-key-managers-auth-keys.html
-        subcategory: Manage authentication keys
-        explorer: false
-  "/security/key-managers/{security_key_manager.uuid}/auth-keys/{key_id}":
-    delete:
-      x-doc:
-        title: Delete an authentication key
-        category: security
-        filename: delete-security-key-managers-auth-keys-.html
-        subcategory: Manage authentication keys
-        explorer: false
-    get:
-      x-doc:
-        title: List all authentication keys associated with the admin SVM
-        category: security
-        filename: get-security-key-managers-auth-keys-.html
-        subcategory: Manage authentication keys
-        explorer: false
+
+ 
   "/security/key-managers/{security_key_manager.uuid}/keys/{node.uuid}/key-ids":
     get:
       x-doc:
@@ -4948,7 +4692,7 @@ paths:
         title: List key servers configured in an external key manager
         category: security
         filename: get-security-key-managers-key-servers.html
-        subcategory: Manage security key managers
+        subcategory: 
         explorer: false
     post:
       x-doc:
@@ -4963,21 +4707,21 @@ paths:
         title: Delete a primary key server
         category: security
         filename: delete-security-key-managers-key-servers-.html
-        subcategory: Manage key manager servers
+        subcategory: 
         explorer: false
     get:
       x-doc:
         title: Retrieve key servers configured in an external key manager
         category: security
         filename: get-security-key-managers-key-servers-.html
-        subcategory: Manage key manager servers
+        subcategory: 
         explorer: false
     patch:
       x-doc:
         title: Update a primary key server
         category: security
         filename: patch-security-key-managers-key-servers-.html
-        subcategory: Manage key manager servers
+        subcategory: 
         explorer: false
   "/security/key-stores":
     get:
@@ -4993,6 +4737,7 @@ paths:
         title: Retrieve login banner and messages of the day
         category: security
         filename: get-security-login-messages.html
+        subcategory: View and update login message configuration
         explorer: false
   "/security/login/messages/{uuid}":
     get:
@@ -5593,14 +5338,7 @@ paths:
         filename: post-storage-file-moves.html
         subcategory: Manage storage file moves
         explorer: false
-  "/storage/file/moves/{node.uuid}/{uuid}/{index}":
-    get:
-      x-doc:
-        title: Check the status of an active file move operation
-        category: storage
-        filename: get-storage-file-moves--.html
-        subcategory: Manage storage file moves
-        explorer: false
+  
   "/storage/flexcache/flexcaches":
     get:
       x-doc:
