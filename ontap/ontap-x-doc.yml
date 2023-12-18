@@ -4701,7 +4701,6 @@ paths:
         title: Add primary key servers to an external key manager
         category: security
         filename: post-security-key-managers-key-servers.html
-        subcategory: Manage key manager servers
         explorer: false
   "/security/key-managers/{uuid}/key-servers/{server}":
     delete:
