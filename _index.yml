@@ -2,7 +2,7 @@ indexpage:
   title: ONTAP 9.11.1 REST API reference 
   lead: 'The ONTAP REST API reference provides descriptions, parameter and response information, and examples for every ONTAP REST API call. The API calls are grouped by category, and each category includes an overview you can use to get started. This reference is also available in <a href="ontap/swagger-ui/index.html">Swagger UI format</a>.'
   summary: 'The ONTAP REST API reference provides descriptions, parameter and response information, and examples for every ONTAP REST API call. The API calls are grouped by category, and each category includes an overview you can use to get started.'
-  keywords: ontap, rest, api, 9111,
+  keywords: ontap, rest, api, 9111
   tiles:
     - title: REST API docs for other ONTAP releases 
       links:
