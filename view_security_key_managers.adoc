@@ -1,0 +1,65 @@
+---
+sidebar: sidebar
+api: true
+explorer: false
+permalink: 'view_security_key_managers.html'
+summary: 'View security key managers'
+---
+
+= View security key managers
+
+
+
+:doctype: book
+
+== Overview
+
+Retrieves the key manager keys on the give node. The following operations are supported:
+
+* GET
+
+== Examples
+
+=== Retrieving key manager key-id information for a node
+
+The following example shows how to retrieve key-ids present on a node for a key manager.
+
+```
+
+= The API:
+
+GET /api/security/key-manager/{security_key_manager.uuid}/keys/{node.uuid}/key-ids
+
+= The call:
+
+curl -X GET 'https://+++<mgmt-ip>+++/api/f4f98a48-8a5c-c548-cd03-c6335f5803a8/keys/00000000-0000-0000-0000-000000000000/key-ids/000000000000000002000000000005009ad4da8fea2cafe2bed803078b780ebe0000000000000c01' -H 'accept: application/hal+json'+++</mgmt-ip>+++
+
+= The response:
+
+{
+  "security_key_manager": {
+    "uuid": "f4f98a48-8a5c-c548-cd03-c6335f5803a8"
+  },
+  "node": {
+    "uuid": "00000000-0000-0000-0000-000000000000"
+  },
+  "key_id": "000000000000000002000000000005009ad4da8fea2cafe2bed803078b780ebe0000000000000c01",
+  "svm": {
+    "name": "cluster-1"
+  },
+  "key_tag": "4d82cc07-f9e0-114e-55dc-82a224bea631",
+  "key_type": "vek",
+  "restored": false,
+  "key_store": "onboard",
+  "key_user": "datavs",
+  "key_manager": "onboard",
+  "key_store_type": "okm",
+  "encryption_algorithm": "XTS-AES-256",
+  "_links": {
+    "self": {
+      "href": "/api/security/key-managers/f4f98a48-8a5c-c548-cd03-c6335f5803a8/keys/00000000-0000-0000-0000-000000000000/key-ids/000000000000000002000000000005009ad4da8fea2cafe2bed803078b780ebe0000000000000c01"
+    }
+  }
+}
+
+

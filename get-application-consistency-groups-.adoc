@@ -1,0 +1,2752 @@
+---
+sidebar: sidebar
+api: true
+explorer: false
+permalink: 'get-application-consistency-groups-.html'
+summary: 'Retrieve a consistency group'
+---
+
+= Retrieve a consistency group
+
+[.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/application/consistency-groups/{uuid}`#
+
+*Introduced In:* 9.10
+
+Retrieves a single consistency group.
+
+== Expensive properties
+
+There is an added cost to retrieving values for these properties. They are not included by default in GET results and must be explicitly requested using the `fields` query parameter. See link:getting_started_with_the_ontap_rest_api.html#Requesting_specific_fields[DOC Requesting specific fields]  to learn more.
+
+* `volumes`
+* `luns`
+* `namespaces`
+
+== Related ONTAP commands
+
+There are no ONTAP commands for managing consistency groups.
+
+
+== Parameters
+
+[cols=5*,options=header]
+|===
+
+|Name
+|Type
+|In
+|Required
+|Description
+
+|uuid
+|string
+|path
+|True
+a|The unique identifier of the group to retrieve.
+
+
+|qos.policy.min_throughput_iops
+|integer
+|query
+|False
+a|Filter by qos.policy.min_throughput_iops
+
+
+|qos.policy.max_throughput_iops
+|integer
+|query
+|False
+a|Filter by qos.policy.max_throughput_iops
+
+
+|qos.policy.uuid
+|string
+|query
+|False
+a|Filter by qos.policy.uuid
+
+
+|qos.policy.min_throughput_mbps
+|integer
+|query
+|False
+a|Filter by qos.policy.min_throughput_mbps
+
+
+|qos.policy.max_throughput_mbps
+|integer
+|query
+|False
+a|Filter by qos.policy.max_throughput_mbps
+
+
+|qos.policy.name
+|string
+|query
+|False
+a|Filter by qos.policy.name
+
+
+|replication_source
+|boolean
+|query
+|False
+a|Filter by replication_source
+
+
+|consistency_groups.space.used
+|integer
+|query
+|False
+a|Filter by consistency_groups.space.used
+
+
+|consistency_groups.space.size
+|integer
+|query
+|False
+a|Filter by consistency_groups.space.size
+
+
+|consistency_groups.space.available
+|integer
+|query
+|False
+a|Filter by consistency_groups.space.available
+
+
+|consistency_groups.qos.policy.min_throughput_iops
+|integer
+|query
+|False
+a|Filter by consistency_groups.qos.policy.min_throughput_iops
+
+
+|consistency_groups.qos.policy.max_throughput_iops
+|integer
+|query
+|False
+a|Filter by consistency_groups.qos.policy.max_throughput_iops
+
+
+|consistency_groups.qos.policy.uuid
+|string
+|query
+|False
+a|Filter by consistency_groups.qos.policy.uuid
+
+
+|consistency_groups.qos.policy.min_throughput_mbps
+|integer
+|query
+|False
+a|Filter by consistency_groups.qos.policy.min_throughput_mbps
+
+
+|consistency_groups.qos.policy.max_throughput_mbps
+|integer
+|query
+|False
+a|Filter by consistency_groups.qos.policy.max_throughput_mbps
+
+
+|consistency_groups.qos.policy.name
+|string
+|query
+|False
+a|Filter by consistency_groups.qos.policy.name
+
+
+|consistency_groups.name
+|string
+|query
+|False
+a|Filter by consistency_groups.name
+
+
+|consistency_groups.uuid
+|string
+|query
+|False
+a|Filter by consistency_groups.uuid
+
+
+|consistency_groups.snapshot_policy.name
+|string
+|query
+|False
+a|Filter by consistency_groups.snapshot_policy.name
+
+
+|consistency_groups.snapshot_policy.uuid
+|string
+|query
+|False
+a|Filter by consistency_groups.snapshot_policy.uuid
+
+
+|consistency_groups.luns.serial_number
+|string
+|query
+|False
+a|Filter by consistency_groups.luns.serial_number
+
+* maxLength: 12
+* minLength: 12
+
+
+|consistency_groups.luns.qos.policy.max_throughput_iops
+|integer
+|query
+|False
+a|Filter by consistency_groups.luns.qos.policy.max_throughput_iops
+
+
+|consistency_groups.luns.qos.policy.min_throughput_iops
+|integer
+|query
+|False
+a|Filter by consistency_groups.luns.qos.policy.min_throughput_iops
+
+
+|consistency_groups.luns.qos.policy.max_throughput_mbps
+|integer
+|query
+|False
+a|Filter by consistency_groups.luns.qos.policy.max_throughput_mbps
+
+
+|consistency_groups.luns.qos.policy.name
+|string
+|query
+|False
+a|Filter by consistency_groups.luns.qos.policy.name
+
+
+|consistency_groups.luns.qos.policy.uuid
+|string
+|query
+|False
+a|Filter by consistency_groups.luns.qos.policy.uuid
+
+
+|consistency_groups.luns.qos.policy.min_throughput_mbps
+|integer
+|query
+|False
+a|Filter by consistency_groups.luns.qos.policy.min_throughput_mbps
+
+
+|consistency_groups.luns.lun_maps.igroup.os_type
+|string
+|query
+|False
+a|Filter by consistency_groups.luns.lun_maps.igroup.os_type
+
+
+|consistency_groups.luns.lun_maps.igroup.protocol
+|string
+|query
+|False
+a|Filter by consistency_groups.luns.lun_maps.igroup.protocol
+
+
+|consistency_groups.luns.lun_maps.igroup.igroups.uuid
+|string
+|query
+|False
+a|Filter by consistency_groups.luns.lun_maps.igroup.igroups.uuid
+
+
+|consistency_groups.luns.lun_maps.igroup.igroups.name
+|string
+|query
+|False
+a|Filter by consistency_groups.luns.lun_maps.igroup.igroups.name
+
+* maxLength: 96
+* minLength: 1
+
+
+|consistency_groups.luns.lun_maps.igroup.initiators.name
+|string
+|query
+|False
+a|Filter by consistency_groups.luns.lun_maps.igroup.initiators.name
+
+
+|consistency_groups.luns.lun_maps.igroup.initiators.comment
+|string
+|query
+|False
+a|Filter by consistency_groups.luns.lun_maps.igroup.initiators.comment
+
+* maxLength: 254
+* minLength: 0
+
+
+|consistency_groups.luns.lun_maps.igroup.comment
+|string
+|query
+|False
+a|Filter by consistency_groups.luns.lun_maps.igroup.comment
+
+* Introduced in: 9.11
+* maxLength: 254
+* minLength: 0
+
+
+|consistency_groups.luns.lun_maps.igroup.name
+|string
+|query
+|False
+a|Filter by consistency_groups.luns.lun_maps.igroup.name
+
+* maxLength: 96
+* minLength: 1
+
+
+|consistency_groups.luns.lun_maps.igroup.uuid
+|string
+|query
+|False
+a|Filter by consistency_groups.luns.lun_maps.igroup.uuid
+
+
+|consistency_groups.luns.lun_maps.logical_unit_number
+|integer
+|query
+|False
+a|Filter by consistency_groups.luns.lun_maps.logical_unit_number
+
+
+|consistency_groups.luns.space.guarantee.reserved
+|boolean
+|query
+|False
+a|Filter by consistency_groups.luns.space.guarantee.reserved
+
+* Introduced in: 9.11
+
+
+|consistency_groups.luns.space.guarantee.requested
+|boolean
+|query
+|False
+a|Filter by consistency_groups.luns.space.guarantee.requested
+
+* Introduced in: 9.11
+
+
+|consistency_groups.luns.space.size
+|integer
+|query
+|False
+a|Filter by consistency_groups.luns.space.size
+
+* Max value: 140737488355328
+* Min value: 4096
+
+
+|consistency_groups.luns.space.used
+|integer
+|query
+|False
+a|Filter by consistency_groups.luns.space.used
+
+
+|consistency_groups.luns.os_type
+|string
+|query
+|False
+a|Filter by consistency_groups.luns.os_type
+
+
+|consistency_groups.luns.enabled
+|boolean
+|query
+|False
+a|Filter by consistency_groups.luns.enabled
+
+
+|consistency_groups.luns.comment
+|string
+|query
+|False
+a|Filter by consistency_groups.luns.comment
+
+* maxLength: 254
+* minLength: 0
+
+
+|consistency_groups.luns.name
+|string
+|query
+|False
+a|Filter by consistency_groups.luns.name
+
+
+|consistency_groups.luns.uuid
+|string
+|query
+|False
+a|Filter by consistency_groups.luns.uuid
+
+
+|consistency_groups.luns.create_time
+|string
+|query
+|False
+a|Filter by consistency_groups.luns.create_time
+
+
+|consistency_groups.svm.uuid
+|string
+|query
+|False
+a|Filter by consistency_groups.svm.uuid
+
+
+|consistency_groups.svm.name
+|string
+|query
+|False
+a|Filter by consistency_groups.svm.name
+
+
+|consistency_groups.volumes.tiering.policy
+|string
+|query
+|False
+a|Filter by consistency_groups.volumes.tiering.policy
+
+
+|consistency_groups.volumes.name
+|string
+|query
+|False
+a|Filter by consistency_groups.volumes.name
+
+* maxLength: 203
+* minLength: 1
+
+
+|consistency_groups.volumes.comment
+|string
+|query
+|False
+a|Filter by consistency_groups.volumes.comment
+
+* maxLength: 1023
+* minLength: 0
+
+
+|consistency_groups.volumes.snapshot_policy.name
+|string
+|query
+|False
+a|Filter by consistency_groups.volumes.snapshot_policy.name
+
+
+|consistency_groups.volumes.snapshot_policy.uuid
+|string
+|query
+|False
+a|Filter by consistency_groups.volumes.snapshot_policy.uuid
+
+
+|consistency_groups.volumes.uuid
+|string
+|query
+|False
+a|Filter by consistency_groups.volumes.uuid
+
+
+|consistency_groups.volumes.qos.policy.min_throughput_iops
+|integer
+|query
+|False
+a|Filter by consistency_groups.volumes.qos.policy.min_throughput_iops
+
+
+|consistency_groups.volumes.qos.policy.max_throughput_iops
+|integer
+|query
+|False
+a|Filter by consistency_groups.volumes.qos.policy.max_throughput_iops
+
+
+|consistency_groups.volumes.qos.policy.uuid
+|string
+|query
+|False
+a|Filter by consistency_groups.volumes.qos.policy.uuid
+
+
+|consistency_groups.volumes.qos.policy.min_throughput_mbps
+|integer
+|query
+|False
+a|Filter by consistency_groups.volumes.qos.policy.min_throughput_mbps
+
+
+|consistency_groups.volumes.qos.policy.max_throughput_mbps
+|integer
+|query
+|False
+a|Filter by consistency_groups.volumes.qos.policy.max_throughput_mbps
+
+
+|consistency_groups.volumes.qos.policy.name
+|string
+|query
+|False
+a|Filter by consistency_groups.volumes.qos.policy.name
+
+
+|consistency_groups.volumes.language
+|string
+|query
+|False
+a|Filter by consistency_groups.volumes.language
+
+
+|consistency_groups.volumes.space.size
+|integer
+|query
+|False
+a|Filter by consistency_groups.volumes.space.size
+
+
+|consistency_groups.volumes.space.available
+|integer
+|query
+|False
+a|Filter by consistency_groups.volumes.space.available
+
+
+|consistency_groups.volumes.space.used
+|integer
+|query
+|False
+a|Filter by consistency_groups.volumes.space.used
+
+
+|consistency_groups.parent_consistency_group.name
+|string
+|query
+|False
+a|Filter by consistency_groups.parent_consistency_group.name
+
+
+|consistency_groups.parent_consistency_group.uuid
+|string
+|query
+|False
+a|Filter by consistency_groups.parent_consistency_group.uuid
+
+
+|consistency_groups.tiering.policy
+|string
+|query
+|False
+a|Filter by consistency_groups.tiering.policy
+
+
+|space.used
+|integer
+|query
+|False
+a|Filter by space.used
+
+
+|space.size
+|integer
+|query
+|False
+a|Filter by space.size
+
+
+|space.available
+|integer
+|query
+|False
+a|Filter by space.available
+
+
+|svm.uuid
+|string
+|query
+|False
+a|Filter by svm.uuid
+
+
+|svm.name
+|string
+|query
+|False
+a|Filter by svm.name
+
+
+|parent_consistency_group.name
+|string
+|query
+|False
+a|Filter by parent_consistency_group.name
+
+
+|parent_consistency_group.uuid
+|string
+|query
+|False
+a|Filter by parent_consistency_group.uuid
+
+
+|name
+|string
+|query
+|False
+a|Filter by name
+
+
+|snapshot_policy.name
+|string
+|query
+|False
+a|Filter by snapshot_policy.name
+
+
+|snapshot_policy.uuid
+|string
+|query
+|False
+a|Filter by snapshot_policy.uuid
+
+
+|luns.serial_number
+|string
+|query
+|False
+a|Filter by luns.serial_number
+
+* maxLength: 12
+* minLength: 12
+
+
+|luns.qos.policy.max_throughput_iops
+|integer
+|query
+|False
+a|Filter by luns.qos.policy.max_throughput_iops
+
+
+|luns.qos.policy.min_throughput_iops
+|integer
+|query
+|False
+a|Filter by luns.qos.policy.min_throughput_iops
+
+
+|luns.qos.policy.max_throughput_mbps
+|integer
+|query
+|False
+a|Filter by luns.qos.policy.max_throughput_mbps
+
+
+|luns.qos.policy.name
+|string
+|query
+|False
+a|Filter by luns.qos.policy.name
+
+
+|luns.qos.policy.uuid
+|string
+|query
+|False
+a|Filter by luns.qos.policy.uuid
+
+
+|luns.qos.policy.min_throughput_mbps
+|integer
+|query
+|False
+a|Filter by luns.qos.policy.min_throughput_mbps
+
+
+|luns.lun_maps.igroup.os_type
+|string
+|query
+|False
+a|Filter by luns.lun_maps.igroup.os_type
+
+
+|luns.lun_maps.igroup.protocol
+|string
+|query
+|False
+a|Filter by luns.lun_maps.igroup.protocol
+
+
+|luns.lun_maps.igroup.igroups.uuid
+|string
+|query
+|False
+a|Filter by luns.lun_maps.igroup.igroups.uuid
+
+
+|luns.lun_maps.igroup.igroups.name
+|string
+|query
+|False
+a|Filter by luns.lun_maps.igroup.igroups.name
+
+* maxLength: 96
+* minLength: 1
+
+
+|luns.lun_maps.igroup.initiators.name
+|string
+|query
+|False
+a|Filter by luns.lun_maps.igroup.initiators.name
+
+
+|luns.lun_maps.igroup.initiators.comment
+|string
+|query
+|False
+a|Filter by luns.lun_maps.igroup.initiators.comment
+
+* maxLength: 254
+* minLength: 0
+
+
+|luns.lun_maps.igroup.comment
+|string
+|query
+|False
+a|Filter by luns.lun_maps.igroup.comment
+
+* Introduced in: 9.11
+* maxLength: 254
+* minLength: 0
+
+
+|luns.lun_maps.igroup.name
+|string
+|query
+|False
+a|Filter by luns.lun_maps.igroup.name
+
+* maxLength: 96
+* minLength: 1
+
+
+|luns.lun_maps.igroup.uuid
+|string
+|query
+|False
+a|Filter by luns.lun_maps.igroup.uuid
+
+
+|luns.lun_maps.logical_unit_number
+|integer
+|query
+|False
+a|Filter by luns.lun_maps.logical_unit_number
+
+
+|luns.space.guarantee.reserved
+|boolean
+|query
+|False
+a|Filter by luns.space.guarantee.reserved
+
+* Introduced in: 9.11
+
+
+|luns.space.guarantee.requested
+|boolean
+|query
+|False
+a|Filter by luns.space.guarantee.requested
+
+* Introduced in: 9.11
+
+
+|luns.space.size
+|integer
+|query
+|False
+a|Filter by luns.space.size
+
+* Max value: 140737488355328
+* Min value: 4096
+
+
+|luns.space.used
+|integer
+|query
+|False
+a|Filter by luns.space.used
+
+
+|luns.os_type
+|string
+|query
+|False
+a|Filter by luns.os_type
+
+
+|luns.enabled
+|boolean
+|query
+|False
+a|Filter by luns.enabled
+
+
+|luns.comment
+|string
+|query
+|False
+a|Filter by luns.comment
+
+* maxLength: 254
+* minLength: 0
+
+
+|luns.name
+|string
+|query
+|False
+a|Filter by luns.name
+
+
+|luns.uuid
+|string
+|query
+|False
+a|Filter by luns.uuid
+
+
+|luns.create_time
+|string
+|query
+|False
+a|Filter by luns.create_time
+
+
+|volumes.tiering.policy
+|string
+|query
+|False
+a|Filter by volumes.tiering.policy
+
+
+|volumes.name
+|string
+|query
+|False
+a|Filter by volumes.name
+
+* maxLength: 203
+* minLength: 1
+
+
+|volumes.comment
+|string
+|query
+|False
+a|Filter by volumes.comment
+
+* maxLength: 1023
+* minLength: 0
+
+
+|volumes.snapshot_policy.name
+|string
+|query
+|False
+a|Filter by volumes.snapshot_policy.name
+
+
+|volumes.snapshot_policy.uuid
+|string
+|query
+|False
+a|Filter by volumes.snapshot_policy.uuid
+
+
+|volumes.uuid
+|string
+|query
+|False
+a|Filter by volumes.uuid
+
+
+|volumes.qos.policy.min_throughput_iops
+|integer
+|query
+|False
+a|Filter by volumes.qos.policy.min_throughput_iops
+
+
+|volumes.qos.policy.max_throughput_iops
+|integer
+|query
+|False
+a|Filter by volumes.qos.policy.max_throughput_iops
+
+
+|volumes.qos.policy.uuid
+|string
+|query
+|False
+a|Filter by volumes.qos.policy.uuid
+
+
+|volumes.qos.policy.min_throughput_mbps
+|integer
+|query
+|False
+a|Filter by volumes.qos.policy.min_throughput_mbps
+
+
+|volumes.qos.policy.max_throughput_mbps
+|integer
+|query
+|False
+a|Filter by volumes.qos.policy.max_throughput_mbps
+
+
+|volumes.qos.policy.name
+|string
+|query
+|False
+a|Filter by volumes.qos.policy.name
+
+
+|volumes.language
+|string
+|query
+|False
+a|Filter by volumes.language
+
+
+|volumes.space.size
+|integer
+|query
+|False
+a|Filter by volumes.space.size
+
+
+|volumes.space.available
+|integer
+|query
+|False
+a|Filter by volumes.space.available
+
+
+|volumes.space.used
+|integer
+|query
+|False
+a|Filter by volumes.space.used
+
+
+|tiering.policy
+|string
+|query
+|False
+a|Filter by tiering.policy
+
+
+|replicated
+|boolean
+|query
+|False
+a|Filter by replicated
+
+
+|fields
+|array[string]
+|query
+|False
+a|Specify the fields to return.
+
+
+|max_records
+|integer
+|query
+|False
+a|Limit the number of records returned.
+
+
+|return_records
+|boolean
+|query
+|False
+a|The default is true for GET calls.  When set to false, only the number of records is returned.
+
+* Default value: 1
+
+
+|return_timeout
+|integer
+|query
+|False
+a|The number of seconds to allow the call to execute before returning.  When iterating over a collection, the default is 15 seconds.  ONTAP returns earlier if either max records or the end of the collection is reached.
+
+* Max value: 120
+* Min value: 0
+* Default value: 15
+
+
+|order_by
+|array[string]
+|query
+|False
+a|Order results by specified fields and optional [asc|desc] direction. Default direction is 'asc' for ascending.
+
+|===
+
+== Response
+
+```
+Status: 200, Ok
+```
+
+
+[cols=3*,options=header]
+|===
+|Name
+|Type
+|Description
+
+|_links
+|link:#self_link[self_link]
+a|
+
+|consistency_groups
+|array[link:#consistency_groups[consistency_groups]]
+a|A consistency group is a mutually exclusive aggregation of volumes or other consistency groups. A consistency group can only be associated with one direct parent consistency group.
+
+
+|luns
+|array[link:#luns[luns]]
+a|The LUNs array can be used to create or modify LUNs in a consistency group on a new or existing volume that is a member of the consistency group. LUNs are considered members of a consistency group if they are located on a volume that is a member of the consistency group.
+
+
+|name
+|string
+a|Name of the consistency group. The consistency group name must be unique within an SVM.
+
+If not provided and the consistency group contains only one volume, the name will be generated based on the volume name. If the consistency group contains more than one volume, the name is required.
+
+
+|namespaces
+|array[link:#namespaces[namespaces]]
+a|An NVMe namespace is a collection of addressable logical blocks presented to hosts connected to the SVM using the NVMe over Fabrics protocol.
+In ONTAP, an NVMe namespace is located within a volume. Optionally, it can be located within a qtree in a volume.
+
+An NVMe namespace is created to a specified size using thin or thick provisioning as determined by the volume on which it is created. NVMe namespaces support being cloned. An NVMe namespace cannot be renamed, resized, or moved to a different volume. NVMe namespaces do not support the assignment of a QoS policy for performance management, but a QoS policy can be assigned to the volume containing the namespace. See the NVMe namespace object model to learn more about each of the properties supported by the NVMe namespace REST API.
+
+An NVMe namespace must be mapped to an NVMe subsystem to grant access to the subsystem's hosts. Hosts can then access the NVMe namespace and perform I/O using the NVMe over Fabrics protocol.
+
+* maxItems: 16
+* minItems: 0
+* uniqueItems: 1
+* Introduced in: 9.10
+* x-ntap-modifyOnly: true
+
+
+|parent_consistency_group
+|link:#parent_consistency_group[parent_consistency_group]
+a|The parent consistency group.
+
+
+|qos
+|link:#qos[qos]
+a|
+
+|replicated
+|boolean
+a|Indicates whether or not replication has been enabled on this consistency group.
+
+
+|replication_source
+|boolean
+a|Indicates whether or not this consistency group is the source for replication.
+
+
+|restore_to
+|link:#restore_to[restore_to]
+a|Use to restore a consistency group to a previous Snapshot copy
+
+
+|snapshot_policy
+|link:#snapshot_policy_reference[snapshot_policy_reference]
+a|This is a reference to the Snapshot copy policy.
+
+
+|space
+|link:#space[space]
+a|Space information for the consistency group.
+
+
+|svm
+|link:#svm[svm]
+a|The Storage Virtual Machine (SVM) in which the consistency group is located.
+
+
+|tiering
+|link:#tiering[tiering]
+a|The tiering placement and policy definitions for volumes in this consistency group.
+
+
+|uuid
+|string
+a|The unique identifier of the consistency group. The UUID is generated by ONTAP when the consistency group is created.
+
+* example: 1cd8a442-86d1-11e0-ae1c-123478563412
+* Introduced in: 9.10
+* readOnly: 1
+
+
+|volumes
+|array[link:#volumes[volumes]]
+a|A consistency group is a mutually exclusive aggregation of volumes or other consistency groups. A volume can only be associated with one direct parent consistency group.
+
+The volumes array can be used to create new volumes in the consistency group, add existing volumes to the consistency group, or modify existing volumes that are already members of the consistency group.
+
+The total number of volumes across all child consistency groups contained in a consistency group is constrained by the same limit.
+
+
+|===
+
+
+.Example response
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "_links": {
+    "self": {
+      "href": "/api/resourcelink"
+    }
+  },
+  "consistency_groups": [
+    {
+      "_links": {
+        "self": {
+          "href": "/api/resourcelink"
+        }
+      },
+      "luns": [
+        {
+          "comment": "string",
+          "create_time": "2018-06-04T19:00:00Z",
+          "lun_maps": [
+            {
+              "igroup": {
+                "comment": "string",
+                "igroups": [
+                  {
+                    "_links": {
+                      "self": {
+                        "href": "/api/resourcelink"
+                      }
+                    },
+                    "name": "igroup1",
+                    "uuid": "4ea7a442-86d1-11e0-ae1c-123478563412"
+                  }
+                ],
+                "initiators": [
+                  {
+                    "comment": "my comment",
+                    "name": "iqn.1998-01.com.corp.iscsi:name1"
+                  }
+                ],
+                "name": "igroup1",
+                "os_type": "string",
+                "protocol": "string",
+                "uuid": "4ea7a442-86d1-11e0-ae1c-123478563412"
+              }
+            }
+          ],
+          "name": "/vol/volume1/lun1",
+          "os_type": "string",
+          "qos": {
+            "policy": {
+              "_links": {
+                "self": {
+                  "href": "/api/resourcelink"
+                }
+              },
+              "max_throughput_iops": 10000,
+              "max_throughput_mbps": 500,
+              "min_throughput_iops": 2000,
+              "min_throughput_mbps": 500,
+              "name": "performance",
+              "uuid": "1cd8a442-86d1-11e0-ae1c-123478563412"
+            }
+          },
+          "serial_number": "string",
+          "space": {
+            "size": 1073741824
+          },
+          "uuid": "1cd8a442-86d1-11e0-ae1c-123478563412"
+        }
+      ],
+      "name": "string",
+      "namespaces": [
+        {
+          "comment": "string",
+          "create_time": "2018-06-04T19:00:00Z",
+          "name": "/vol/volume1/qtree1/namespace1",
+          "os_type": "string",
+          "subsystem_map": [
+            {
+              "_links": {
+                "self": {
+                  "href": "/api/resourcelink"
+                }
+              },
+              "anagrpid": "00103050h",
+              "nsid": "00000001h",
+              "subsystem": {
+                "_links": {
+                  "self": {
+                    "href": "/api/resourcelink"
+                  }
+                },
+                "name": "string",
+                "uuid": "1cd8a442-86d1-11e0-ae1c-123478563412"
+              }
+            }
+          ],
+          "uuid": "1cd8a442-86d1-11e0-ae1c-123478563412"
+        }
+      ],
+      "parent_consistency_group": {
+        "_links": {
+          "self": {
+            "href": "/api/resourcelink"
+          }
+        },
+        "name": "my_consistency_group",
+        "uuid": "02c9e252-41be-11e9-81d5-00a0986138f7"
+      },
+      "qos": {
+        "policy": {
+          "_links": {
+            "self": {
+              "href": "/api/resourcelink"
+            }
+          },
+          "max_throughput_iops": 10000,
+          "max_throughput_mbps": 500,
+          "min_throughput_iops": 2000,
+          "min_throughput_mbps": 500,
+          "name": "performance",
+          "uuid": "1cd8a442-86d1-11e0-ae1c-123478563412"
+        }
+      },
+      "restore_to": {
+        "snapshot": {
+          "name": "string",
+          "uuid": "string"
+        }
+      },
+      "snapshot_policy": {
+        "_links": {
+          "self": {
+            "href": "/api/resourcelink"
+          }
+        },
+        "name": "default",
+        "uuid": "1cd8a442-86d1-11e0-ae1c-123478563412"
+      },
+      "space": {
+        "available": 5737418,
+        "size": 1073741824,
+        "used": 5737418
+      },
+      "svm": {
+        "_links": {
+          "self": {
+            "href": "/api/resourcelink"
+          }
+        },
+        "name": "svm1",
+        "uuid": "02c9e252-41be-11e9-81d5-00a0986138f7"
+      },
+      "tiering": {
+        "policy": "string"
+      },
+      "uuid": "1cd8a442-86d1-11e0-ae1c-123478563412",
+      "volumes": [
+        {
+          "comment": "string",
+          "language": "string",
+          "name": "vol_cs_dept",
+          "qos": {
+            "policy": {
+              "_links": {
+                "self": {
+                  "href": "/api/resourcelink"
+                }
+              },
+              "max_throughput_iops": 10000,
+              "max_throughput_mbps": 500,
+              "min_throughput_iops": 2000,
+              "min_throughput_mbps": 500,
+              "name": "performance",
+              "uuid": "1cd8a442-86d1-11e0-ae1c-123478563412"
+            }
+          },
+          "snapshot_policy": {
+            "_links": {
+              "self": {
+                "href": "/api/resourcelink"
+              }
+            },
+            "name": "default",
+            "uuid": "1cd8a442-86d1-11e0-ae1c-123478563412"
+          },
+          "tiering": {
+            "policy": "string"
+          },
+          "uuid": "028baa66-41bd-11e9-81d5-00a0986138f7"
+        }
+      ]
+    }
+  ],
+  "luns": [
+    {
+      "comment": "string",
+      "create_time": "2018-06-04T19:00:00Z",
+      "lun_maps": [
+        {
+          "igroup": {
+            "comment": "string",
+            "igroups": [
+              {
+                "_links": {
+                  "self": {
+                    "href": "/api/resourcelink"
+                  }
+                },
+                "name": "igroup1",
+                "uuid": "4ea7a442-86d1-11e0-ae1c-123478563412"
+              }
+            ],
+            "initiators": [
+              {
+                "comment": "my comment",
+                "name": "iqn.1998-01.com.corp.iscsi:name1"
+              }
+            ],
+            "name": "igroup1",
+            "os_type": "string",
+            "protocol": "string",
+            "uuid": "4ea7a442-86d1-11e0-ae1c-123478563412"
+          }
+        }
+      ],
+      "name": "/vol/volume1/lun1",
+      "os_type": "string",
+      "qos": {
+        "policy": {
+          "_links": {
+            "self": {
+              "href": "/api/resourcelink"
+            }
+          },
+          "max_throughput_iops": 10000,
+          "max_throughput_mbps": 500,
+          "min_throughput_iops": 2000,
+          "min_throughput_mbps": 500,
+          "name": "performance",
+          "uuid": "1cd8a442-86d1-11e0-ae1c-123478563412"
+        }
+      },
+      "serial_number": "string",
+      "space": {
+        "size": 1073741824
+      },
+      "uuid": "1cd8a442-86d1-11e0-ae1c-123478563412"
+    }
+  ],
+  "name": "string",
+  "namespaces": [
+    {
+      "comment": "string",
+      "create_time": "2018-06-04T19:00:00Z",
+      "name": "/vol/volume1/qtree1/namespace1",
+      "os_type": "string",
+      "subsystem_map": [
+        {
+          "_links": {
+            "self": {
+              "href": "/api/resourcelink"
+            }
+          },
+          "anagrpid": "00103050h",
+          "nsid": "00000001h",
+          "subsystem": {
+            "_links": {
+              "self": {
+                "href": "/api/resourcelink"
+              }
+            },
+            "name": "string",
+            "uuid": "1cd8a442-86d1-11e0-ae1c-123478563412"
+          }
+        }
+      ],
+      "uuid": "1cd8a442-86d1-11e0-ae1c-123478563412"
+    }
+  ],
+  "parent_consistency_group": {
+    "_links": {
+      "self": {
+        "href": "/api/resourcelink"
+      }
+    },
+    "name": "my_consistency_group",
+    "uuid": "02c9e252-41be-11e9-81d5-00a0986138f7"
+  },
+  "qos": {
+    "policy": {
+      "_links": {
+        "self": {
+          "href": "/api/resourcelink"
+        }
+      },
+      "max_throughput_iops": 10000,
+      "max_throughput_mbps": 500,
+      "min_throughput_iops": 2000,
+      "min_throughput_mbps": 500,
+      "name": "performance",
+      "uuid": "1cd8a442-86d1-11e0-ae1c-123478563412"
+    }
+  },
+  "restore_to": {
+    "snapshot": {
+      "name": "string",
+      "uuid": "string"
+    }
+  },
+  "snapshot_policy": {
+    "_links": {
+      "self": {
+        "href": "/api/resourcelink"
+      }
+    },
+    "name": "default",
+    "uuid": "1cd8a442-86d1-11e0-ae1c-123478563412"
+  },
+  "space": {
+    "available": 5737418,
+    "size": 1073741824,
+    "used": 5737418
+  },
+  "svm": {
+    "_links": {
+      "self": {
+        "href": "/api/resourcelink"
+      }
+    },
+    "name": "svm1",
+    "uuid": "02c9e252-41be-11e9-81d5-00a0986138f7"
+  },
+  "tiering": {
+    "policy": "string"
+  },
+  "uuid": "1cd8a442-86d1-11e0-ae1c-123478563412",
+  "volumes": [
+    {
+      "comment": "string",
+      "language": "string",
+      "name": "vol_cs_dept",
+      "qos": {
+        "policy": {
+          "_links": {
+            "self": {
+              "href": "/api/resourcelink"
+            }
+          },
+          "max_throughput_iops": 10000,
+          "max_throughput_mbps": 500,
+          "min_throughput_iops": 2000,
+          "min_throughput_mbps": 500,
+          "name": "performance",
+          "uuid": "1cd8a442-86d1-11e0-ae1c-123478563412"
+        }
+      },
+      "snapshot_policy": {
+        "_links": {
+          "self": {
+            "href": "/api/resourcelink"
+          }
+        },
+        "name": "default",
+        "uuid": "1cd8a442-86d1-11e0-ae1c-123478563412"
+      },
+      "tiering": {
+        "policy": "string"
+      },
+      "uuid": "028baa66-41bd-11e9-81d5-00a0986138f7"
+    }
+  ]
+}
+====
+
+== Error
+
+```
+Status: Default
+```
+
+ONTAP Error Response Codes
+
+|===
+| Error Code | Description
+
+| 53411842
+| Consistency group does not exist.
+
+| 53411843
+| A consistency group with specified UUID was not found.
+
+| 53411844
+| Specified consistency group was not found in the specified SVM.
+
+| 53411845
+| The specified UUID and name refer to different consistency groups.
+
+| 53411846
+| Either name or UUID must be provided.
+|===
+
+
+
+[cols=3*,options=header]
+|===
+|Name
+|Type
+|Description
+
+|error
+|link:#error[error]
+a|
+
+|===
+
+
+.Example error
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "error": {
+    "arguments": [
+      {
+        "code": "string",
+        "message": "string"
+      }
+    ],
+    "code": "4",
+    "message": "entry doesn't exist",
+    "target": "uuid"
+  }
+}
+====
+
+== Definitions
+
+[.api-def-first-level]
+.See Definitions
+[%collapsible%closed]
+//Start collapsible Definitions block
+====                
+[#href]
+[.api-collapsible-fifth-title]
+href
+
+[cols=3*,options=header]
+|===
+|Name
+|Type
+|Description
+
+|href
+|string
+a|
+
+|===
+
+
+[#self_link]
+[.api-collapsible-fifth-title]
+self_link
+
+[cols=3*,options=header]
+|===
+|Name
+|Type
+|Description
+
+|self
+|link:#href[href]
+a|
+
+|===
+
+
+[#source]
+[.api-collapsible-fifth-title]
+source
+
+The source LUN for a LUN clone operation. This can be specified using property `clone.source.uuid` or `clone.source.name`. If both properties are supplied, they must refer to the same LUN.
+
+Valid in POST to create a new LUN as a clone of the source.
+
+Valid in PATCH to overwrite an existing LUN's data as a clone of another.
+
+[#clone]
+[.api-collapsible-fifth-title]
+clone
+
+This sub-object is used in POST to create a new LUN as a clone of an existing LUN, or PATCH to overwrite an existing LUN as a clone of another. Setting a property in this sub-object indicates that a LUN clone is desired. Consider the following other properties when cloning a LUN: `auto_delete`, `qos_policy`, `space.guarantee.requested` and `space.scsi_thin_provisioning_support_enabled`.
+
+When used in a PATCH, the patched LUN's data is over-written as a clone of the source and the following properties are preserved from the patched LUN unless otherwise specified as part of the PATCH: `class`, `auto_delete`, `lun_maps`, `serial_number`, `status.state`, and `uuid`.
+
+Persistent reservations for the patched LUN are also preserved.
+
+[#igroups]
+[.api-collapsible-fifth-title]
+igroups
+
+[cols=3*,options=header]
+|===
+|Name
+|Type
+|Description
+
+|_links
+|link:#self_link[self_link]
+a|
+
+|name
+|string
+a|The name of the initiator group.
+
+
+|uuid
+|string
+a|The unique identifier of the initiator group.
+
+
+|===
+
+
+[#initiators]
+[.api-collapsible-fifth-title]
+initiators
+
+The initiators that are members of the initiator group.
+
+
+[cols=3*,options=header]
+|===
+|Name
+|Type
+|Description
+
+|comment
+|string
+a|A comment available for use by the administrator.
+
+
+|name
+|string
+a|Name of initiator that is a member of the initiator group.
+
+
+|===
+
+
+[#igroup]
+[.api-collapsible-fifth-title]
+igroup
+
+The initiator group that directly owns the initiator, which is where modification of the initiator is supported. This property will only be populated when the initiator is a member of a nested initiator group.
+
+
+[cols=3*,options=header]
+|===
+|Name
+|Type
+|Description
+
+|comment
+|string
+a|A comment available for use by the administrator. Valid in POST and PATCH.
+
+
+|igroups
+|array[link:#igroups[igroups]]
+a|Separate igroup definitions to include in this igroup.
+
+
+|initiators
+|array[link:#initiators[initiators]]
+a|The initiators that are members of the group.
+
+
+|name
+|string
+a|The name of the initiator group. Required in POST; optional in PATCH.
+
+
+|os_type
+|string
+a|The host operating system of the initiator group. All initiators in the group should be hosts of the same operating system. Required in POST; optional in PATCH.
+
+
+|protocol
+|string
+a|The protocols supported by the initiator group. This restricts the type of initiators that can be added to the initiator group. Optional in POST; if not supplied, this defaults to _mixed_.
+
+The protocol of an initiator group cannot be changed after creation of the group.
+
+
+|uuid
+|string
+a|The unique identifier of the initiator group.
+
+
+|===
+
+
+[#lun_maps]
+[.api-collapsible-fifth-title]
+lun_maps
+
+A LUN map is an association between a LUN and an initiator group.
+
+When a LUN is mapped to an initiator group, the initiator group's initiators are granted access to the LUN. The relationship between a LUN and an initiator group is many LUNs to many initiator groups.
+
+
+[cols=3*,options=header]
+|===
+|Name
+|Type
+|Description
+
+|igroup
+|link:#igroup[igroup]
+a|The initiator group that directly owns the initiator, which is where modification of the initiator is supported. This property will only be populated when the initiator is a member of a nested initiator group.
+
+
+|logical_unit_number
+|integer
+a|The logical unit number assigned to the LUN when mapped to the specified initiator group. The number is used to identify the LUN to initiators in the initiator group when communicating through the Fibre Channel Protocol or iSCSI. Optional in POST; if no value is provided, ONTAP assigns the lowest available value.
+
+* Introduced in: 9.6
+* readCreate: 1
+
+
+|===
+
+
+[#provisioning_options]
+[.api-collapsible-fifth-title]
+provisioning_options
+
+Options that are applied to the operation.
+
+
+[cols=3*,options=header]
+|===
+|Name
+|Type
+|Description
+
+|action
+|string
+a|Operation to perform
+
+
+|count
+|integer
+a|Number of elements to perform the operation on.
+
+
+|===
+
+
+[#policy]
+[.api-collapsible-fifth-title]
+policy
+
+The QoS policy
+
+
+[cols=3*,options=header]
+|===
+|Name
+|Type
+|Description
+
+|_links
+|link:#self_link[self_link]
+a|
+
+|max_throughput_iops
+|integer
+a|Specifies the maximum throughput in IOPS, 0 means none. This is mutually exclusive with name and UUID during POST and PATCH.
+
+
+|max_throughput_mbps
+|integer
+a|Specifies the maximum throughput in Megabytes per sec, 0 means none. This is mutually exclusive with name and UUID during POST and PATCH.
+
+
+|min_throughput_iops
+|integer
+a|Specifies the minimum throughput in IOPS, 0 means none. Setting "min_throughput" is supported on AFF platforms only, unless FabricPool tiering policies are set. This is mutually exclusive with name and UUID during POST and PATCH.
+
+
+|min_throughput_mbps
+|integer
+a|Specifies the minimum throughput in Megabytes per sec, 0 means none. This is mutually exclusive with name and UUID during POST and PATCH.
+
+
+|name
+|string
+a|The QoS policy group name. This is mutually exclusive with UUID and other QoS attributes during POST and PATCH.
+
+
+|uuid
+|string
+a|The QoS policy group UUID. This is mutually exclusive with name and other QoS attributes during POST and PATCH.
+
+
+|===
+
+
+[#qos]
+[.api-collapsible-fifth-title]
+qos
+
+[cols=3*,options=header]
+|===
+|Name
+|Type
+|Description
+
+|policy
+|link:#policy[policy]
+a|The QoS policy
+
+
+|===
+
+
+[#guarantee]
+[.api-collapsible-fifth-title]
+guarantee
+
+Properties that request and report the space guarantee for the LUN.
+
+
+[cols=3*,options=header]
+|===
+|Name
+|Type
+|Description
+
+|requested
+|boolean
+a|The requested space reservation policy for the LUN. If _true_, a space reservation is requested for the LUN; if _false_, the LUN is thin provisioned. Guaranteeing a space reservation request for a LUN requires that the volume in which the LUN resides is also space reserved and that the fractional reserve for the volume is 100%. Valid in POST and PATCH.
+
+
+|reserved
+|boolean
+a|Reports if the LUN is space guaranteed.
+
+If _true_, a space guarantee is requested and the containing volume and aggregate support the request. If _false_, a space guarantee is not requested or a space guarantee is requested and either the containing volume or aggregate do not support the request.
+
+
+|===
+
+
+[#space]
+[.api-collapsible-fifth-title]
+space
+
+The storage space related properties of the LUN.
+
+
+[cols=3*,options=header]
+|===
+|Name
+|Type
+|Description
+
+|guarantee
+|link:#guarantee[guarantee]
+a|Properties that request and report the space guarantee for the LUN.
+
+
+|size
+|integer
+a|The total provisioned size of the LUN. The LUN size can be increased but not reduced using the REST interface.
+The maximum and minimum sizes listed here are the absolute maximum and absolute minimum sizes, in bytes. The actual minimum and maxiumum sizes vary depending on the ONTAP version, ONTAP platform, and the available space in the containing volume and aggregate.
+For more information, see _Size properties_ in the _docs_ section of the ONTAP REST API documentation.
+
+* example: 1073741824
+* format: int64
+* Max value: 140737488355328
+* Min value: 4096
+* Introduced in: 9.6
+
+
+|used
+|integer
+a|The amount of space consumed by the main data stream of the LUN.
+
+This value is the total space consumed in the volume by the LUN, including filesystem overhead, but excluding prefix and suffix streams. Due to internal filesystem overhead and the many ways SAN filesystems and applications utilize blocks within a LUN, this value does not necessarily reflect actual consumption/availability from the perspective of the filesystem or application. Without specific knowledge of how the LUN blocks are utilized outside of ONTAP, this property should not be used as an indicator for an out-of-space condition.
+
+For more information, see _Size properties_ in the _docs_ section of the ONTAP REST API documentation.
+
+* format: int64
+* Introduced in: 9.6
+* readOnly: 1
+
+
+|===
+
+
+[#luns]
+[.api-collapsible-fifth-title]
+luns
+
+A LUN is the logical representation of storage in a storage area network (SAN).
+
+In ONTAP, a LUN is located within a volume. Optionally, it can be located within a qtree in a volume.
+
+A LUN can be created to a specified size using thin or thick provisioning. A LUN can then be renamed, resized, cloned, and moved to a different volume. LUNs support the assignment of a quality of service (QoS) policy for performance management or a QoS policy can be assigned to the volume containing the LUN. See the LUN object model to learn more about each of the properties supported by the LUN REST API.
+
+A LUN must be mapped to an initiator group to grant access to the initiator group's initiators (client hosts). Initiators can then access the LUN and perform I/O over a Fibre Channel (FC) fabric using the Fibre Channel Protocol or a TCP/IP network using iSCSI.
+
+
+[cols=3*,options=header]
+|===
+|Name
+|Type
+|Description
+
+|comment
+|string
+a|A configurable comment available for use by the administrator. Valid in POST and PATCH.
+
+
+|create_time
+|string
+a|The time the LUN was created.
+
+
+|enabled
+|boolean
+a|The enabled state of the LUN. LUNs can be disabled to prevent access to the LUN. Certain error conditions also cause the LUN to become disabled. If the LUN is disabled, you can consult the `state` property to determine if the LUN is administratively disabled (_offline_) or has become disabled as a result of an error. A LUN in an error condition can be brought online by setting the `enabled` property to _true_ or brought administratively offline by setting the `enabled` property to _false_. Upon creation, a LUN is enabled by default. Valid in PATCH.
+
+
+|lun_maps
+|array[link:#lun_maps[lun_maps]]
+a|An array of LUN maps.
+
+A LUN map is an association between a LUN and an initiator group. When a LUN is mapped to an initiator group, the initiator group's initiators are granted access to the LUN. The relationship between a LUN and an initiator group is many LUNs to many initiator groups.
+
+
+|name
+|string
+a|The fully qualified path name of the LUN composed of the "/vol" prefix, the volume name, the qtree name (optional), and the base name of the LUN. Valid in POST and PATCH.
+
+
+|os_type
+|string
+a|The operating system type of the LUN.
+
+Required in POST when creating a LUN that is not a clone of another. Disallowed in POST when creating a LUN clone.
+
+
+|qos
+|link:#qos[qos]
+a|
+
+|serial_number
+|string
+a|The LUN serial number. The serial number is generated by ONTAP when the LUN is created.
+
+* maxLength: 12
+* minLength: 12
+* readOnly: 1
+* Introduced in: 9.10
+
+
+|space
+|link:#space[space]
+a|The storage space related properties of the LUN.
+
+
+|uuid
+|string
+a|The unique identifier of the LUN.  The UUID is generated by ONTAP when the LUN is created.
+
+* example: 1cd8a442-86d1-11e0-ae1c-123478563412
+* readOnly: 1
+* Introduced in: 9.10
+
+
+|===
+
+
+[#_links]
+[.api-collapsible-fifth-title]
+_links
+
+[cols=3*,options=header]
+|===
+|Name
+|Type
+|Description
+
+|self
+|link:#href[href]
+a|
+
+|===
+
+
+[#nvme_subsystem_reference]
+[.api-collapsible-fifth-title]
+nvme_subsystem_reference
+
+An NVMe subsystem maintains configuration state and NVMe namespace access control for a set of NVMe-connected hosts.
+
+
+[cols=3*,options=header]
+|===
+|Name
+|Type
+|Description
+
+|_links
+|link:#_links[_links]
+a|
+
+|name
+|string
+a|The name of the NVMe subsystem.
+
+
+|uuid
+|string
+a|The unique identifier of the NVMe subsystem.
+
+
+|===
+
+
+[#subsystem_map]
+[.api-collapsible-fifth-title]
+subsystem_map
+
+The NVMe subsystem with which the NVMe namespace is associated. A namespace can be mapped to zero (0) or one (1) subsystems.
+
+There is an added cost to retrieving property values for `subsystem_map`.
+They are not populated for either a collection GET or an instance GET unless explicitly requested using the `fields` query parameter.
+
+
+[cols=3*,options=header]
+|===
+|Name
+|Type
+|Description
+
+|_links
+|link:#self_link[self_link]
+a|
+
+|anagrpid
+|string
+a|The Asymmetric Namespace Access Group ID (ANAGRPID) of the NVMe namespace.
+
+The format for an ANAGRPID is 8 hexadecimal digits (zero-filled) followed by a lower case "h".
+
+
+|nsid
+|string
+a|The NVMe namespace identifier. This is an identifier used by an NVMe controller to provide access to the NVMe namespace.
+
+The format for an NVMe namespace identifier is 8 hexadecimal digits (zero-filled) followed by a lower case "h".
+
+
+|subsystem
+|link:#nvme_subsystem_reference[nvme_subsystem_reference]
+a|An NVMe subsystem maintains configuration state and NVMe namespace access control for a set of NVMe-connected hosts.
+
+
+|===
+
+
+[#namespaces]
+[.api-collapsible-fifth-title]
+namespaces
+
+An NVMe namespace is a collection of addressable logical blocks presented to hosts connected to the storage virtual machine using the NVMe over Fabrics protocol.
+
+In ONTAP, an NVMe namespace is located within a volume. Optionally, it can be located within a qtree in a volume.
+
+An NVMe namespace is created to a specified size using thin or thick provisioning as determined by the volume on which it is created. NVMe namespaces support being cloned. An NVMe namespace cannot be renamed, resized, or moved to a different volume. NVMe namespaces do not support the assignment of a QoS policy for performance management, but a QoS policy can be assigned to the volume containing the namespace. See the NVMe namespace object model to learn more about each of the properties supported by the NVMe namespace REST API.
+
+An NVMe namespace must be mapped to an NVMe subsystem to grant access to the subsystem's hosts. Hosts can then access the NVMe namespace and perform I/O using the NVMe over Fabrics protocol.
+
+
+[cols=3*,options=header]
+|===
+|Name
+|Type
+|Description
+
+|auto_delete
+|boolean
+a|This property marks the NVMe namespace for auto deletion when the volume containing the namespace runs out of space. This is most commonly set on namespace clones.
+
+When set to _true_, the NVMe namespace becomes eligible for automatic deletion when the volume runs out of space. Auto deletion only occurs when the volume containing the namespace is also configured for auto deletion and free space in the volume decreases below a particular threshold.
+
+This property is optional in POST and PATCH. The default value for a new NVMe namespace is _false_.
+
+There is an added cost to retrieving this property's value. It is not populated for either a collection GET or an instance GET unless it is explicitly requested using the `fields` query parameter. See link:getting_started_with_the_ontap_rest_api.html#Requesting_specific_fields[Requesting specific fields] to learn more.
+
+
+|comment
+|string
+a|A configurable comment available for use by the administrator. Valid in POST and PATCH.
+
+
+|create_time
+|string
+a|The time the NVMe namespace was created.
+
+
+|enabled
+|boolean
+a|The enabled state of the NVMe namespace. Certain error conditions cause the namespace to become disabled. If the namespace is disabled, you can check the `state` property to determine what error disabled the namespace. An NVMe namespace is enabled automatically when it is created.
+
+
+|name
+|string
+a|The fully qualified path name of the NVMe namespace composed of a "/vol" prefix, the volume name, the (optional) qtree name and base name of the namespace. Valid in POST.
+
+NVMe namespaces do not support rename, or movement between volumes.
+
+
+|os_type
+|string
+a|The operating system type of the NVMe namespace.
+
+Required in POST when creating an NVMe namespace that is not a clone of another. Disallowed in POST when creating a namespace clone.
+
+
+|subsystem_map
+|array[link:#subsystem_map[subsystem_map]]
+a|The NVMe subsystem with which the NVMe namespace is associated. A namespace can be mapped to zero (0) or one (1) subsystems.
+
+There is an added cost to retrieving property values for `subsystem_map`. They are not populated for either a collection GET or an instance GET unless explicitly requested using the `fields` query parameter.
+
+
+|uuid
+|string
+a|The unique identifier of the NVMe namespace.
+
+
+|===
+
+
+[#parent_consistency_group]
+[.api-collapsible-fifth-title]
+parent_consistency_group
+
+The parent consistency group.
+
+
+[cols=3*,options=header]
+|===
+|Name
+|Type
+|Description
+
+|_links
+|link:#self_link[self_link]
+a|
+
+|name
+|string
+a|The name of the consistency group.
+
+
+|uuid
+|string
+a|The unique identifier of the consistency group.
+
+
+|===
+
+
+[#storage_service]
+[.api-collapsible-fifth-title]
+storage_service
+
+Determines the placement of any storage object created during this operation.
+
+
+[cols=3*,options=header]
+|===
+|Name
+|Type
+|Description
+
+|name
+|string
+a|Storage service name. If not specified, the default value is the most performant for the platform.
+
+
+|===
+
+
+[#provisioning_options]
+[.api-collapsible-fifth-title]
+provisioning_options
+
+Options that are applied to the operation.
+
+
+[cols=3*,options=header]
+|===
+|Name
+|Type
+|Description
+
+|action
+|string
+a|Operation to perform
+
+
+|storage_service
+|link:#storage_service[storage_service]
+a|Determines the placement of any storage object created during this operation.
+
+
+|===
+
+
+[#snapshot]
+[.api-collapsible-fifth-title]
+snapshot
+
+A consistency group's Snapshot copy
+
+
+[cols=3*,options=header]
+|===
+|Name
+|Type
+|Description
+
+|name
+|string
+a|The name of the consistency group's Snapshot copy to restore to.
+
+
+|uuid
+|string
+a|The UUID of the consistency group's Snapshot copy to restore to.
+
+
+|===
+
+
+[#restore_to]
+[.api-collapsible-fifth-title]
+restore_to
+
+Use to restore a consistency group to a previous Snapshot copy
+
+
+[cols=3*,options=header]
+|===
+|Name
+|Type
+|Description
+
+|snapshot
+|link:#snapshot[snapshot]
+a|A consistency group's Snapshot copy
+
+
+|===
+
+
+[#snapshot_policy_reference]
+[.api-collapsible-fifth-title]
+snapshot_policy_reference
+
+This is a reference to the Snapshot copy policy.
+
+
+[cols=3*,options=header]
+|===
+|Name
+|Type
+|Description
+
+|_links
+|link:#_links[_links]
+a|
+
+|name
+|string
+a|
+
+|uuid
+|string
+a|
+
+|===
+
+
+[#space]
+[.api-collapsible-fifth-title]
+space
+
+Space information for the consistency group.
+
+
+[cols=3*,options=header]
+|===
+|Name
+|Type
+|Description
+
+|available
+|integer
+a|The amount of space available in the consistency group, in bytes.
+
+
+|size
+|integer
+a|The total provisioned size of the consistency group, in bytes.
+
+
+|used
+|integer
+a|The amount of space consumed in the consistency group, in bytes.
+
+
+|===
+
+
+[#svm]
+[.api-collapsible-fifth-title]
+svm
+
+The Storage Virtual Machine (SVM) in which the consistency group is located.
+
+
+[cols=3*,options=header]
+|===
+|Name
+|Type
+|Description
+
+|_links
+|link:#_links[_links]
+a|
+
+|name
+|string
+a|The name of the SVM.
+
+
+|uuid
+|string
+a|The unique identifier of the SVM.
+
+
+|===
+
+
+[#tiering]
+[.api-collapsible-fifth-title]
+tiering
+
+The tiering placement and policy definitions for volumes in this consistency group.
+
+
+[cols=3*,options=header]
+|===
+|Name
+|Type
+|Description
+
+|policy
+|string
+a|Policy that determines whether the user data blocks of a volume in a FabricPool will be tiered to the cloud store when they become cold.
+
+FabricPool combines flash (performance tier) with a cloud store into a single aggregate. Temperature of a volume block increases if it is accessed frequently and decreases when it is not. Valid in POST or PATCH.
+
+all &dash; Allows tiering of both Snapshot copies and active file system user data to the cloud store as soon as possible by ignoring the temperature on the volume blocks.
+
+auto &dash; Allows tiering of both snapshot and active file system user data to the cloud store
+
+none &dash; Volume blocks are not be tiered to the cloud store.
+
+snapshot_only &dash; Allows tiering of only the volume Snapshot copies not associated with the active file system.
+
+The default tiering policy is "snapshot-only" for a FlexVol volume and "none" for a FlexGroup volume. The default minimum cooling period for the "snapshot-only" tiering policy is 2 days and for the "auto" tiering policy it is 31 days.
+
+
+|===
+
+
+[#provisioning_options]
+[.api-collapsible-fifth-title]
+provisioning_options
+
+Options that are applied to the operation.
+
+
+[cols=3*,options=header]
+|===
+|Name
+|Type
+|Description
+
+|action
+|string
+a|Operation to perform
+
+
+|count
+|integer
+a|Number of elements to perform the operation on.
+
+
+|storage_service
+|link:#storage_service[storage_service]
+a|Determines the placement of any storage object created during this operation.
+
+
+|===
+
+
+[#qos]
+[.api-collapsible-fifth-title]
+qos
+
+The QoS policy for this volume.
+
+
+[cols=3*,options=header]
+|===
+|Name
+|Type
+|Description
+
+|policy
+|link:#policy[policy]
+a|The QoS policy
+
+
+|===
+
+
+[#space]
+[.api-collapsible-fifth-title]
+space
+
+[cols=3*,options=header]
+|===
+|Name
+|Type
+|Description
+
+|available
+|integer
+a|The available space, in bytes.
+
+
+|size
+|integer
+a|Total provisioned size, in bytes.
+
+
+|used
+|integer
+a|The virtual space used (includes volume reserves) before storage efficiency, in bytes.
+
+
+|===
+
+
+[#tiering]
+[.api-collapsible-fifth-title]
+tiering
+
+The tiering placement and policy definitions for this volume.
+
+
+[cols=3*,options=header]
+|===
+|Name
+|Type
+|Description
+
+|policy
+|string
+a|Policy that determines whether the user data blocks of a volume in a FabricPool will be tiered to the cloud store when they become cold.
+
+FabricPool combines flash (performance tier) with a cloud store into a single aggregate. Temperature of a volume block increases if it is accessed frequently and decreases when it is not. Valid in POST or PATCH.
+
+all &dash; Allows tiering of both Snapshot copies and active file system user data to the cloud store as soon as possible by ignoring the temperature on the volume blocks.
+
+auto &dash; Allows tiering of both snapshot and active file system user data to the cloud store
+
+none &dash; Volume blocks are not be tiered to the cloud store.
+
+snapshot_only &dash; Allows tiering of only the volume Snapshot copies not associated with the active file system.
+
+The default tiering policy is "snapshot-only" for a FlexVol volume and "none" for a FlexGroup volume. The default minimum cooling period for the "snapshot-only" tiering policy is 2 days and for the "auto" tiering policy it is 31 days.
+
+
+|===
+
+
+[#volumes]
+[.api-collapsible-fifth-title]
+volumes
+
+[cols=3*,options=header]
+|===
+|Name
+|Type
+|Description
+
+|comment
+|string
+a|A comment for the volume. Valid in POST or PATCH.
+
+
+|language
+|string
+a|Language encoding setting for volume. If no language is specified, the volume inherits its SVM language encoding setting.
+
+
+|name
+|string
+a|Volume name. The name of volume must start with an alphabetic character (a to z or A to Z) or an underscore (_). The name must be 197 or fewer characters in length for FlexGroups, and 203 or fewer characters in length for all other types of volumes. Volume names must be unique within an SVM. Required on POST.
+
+
+|qos
+|link:#qos[qos]
+a|The QoS policy for this volume.
+
+
+|snapshot_policy
+|link:#snapshot_policy_reference[snapshot_policy_reference]
+a|This is a reference to the Snapshot copy policy.
+
+
+|space
+|link:#space[space]
+a|
+
+|tiering
+|link:#tiering[tiering]
+a|The tiering placement and policy definitions for this volume.
+
+
+|uuid
+|string
+a|Unique identifier for the volume. This corresponds to the instance-uuid that is exposed in the CLI and ONTAPI. It does not change due to a volume move.
+
+* example: 028baa66-41bd-11e9-81d5-00a0986138f7
+* readOnly: 1
+* Introduced in: 9.8
+
+
+|===
+
+
+[#consistency_groups]
+[.api-collapsible-fifth-title]
+consistency_groups
+
+[cols=3*,options=header]
+|===
+|Name
+|Type
+|Description
+
+|_links
+|link:#self_link[self_link]
+a|
+
+|luns
+|array[link:#luns[luns]]
+a|The LUNs array can be used to create or modify LUNs in a consistency group on a new or existing volume that is a member of the consistency group. LUNs are considered members of a consistency group if they are located on a volume that is a member of the consistency group.
+
+
+|name
+|string
+a|Name of the consistency group. The consistency group name must be unique within an SVM.
+
+If not provided and the consistency group contains only one volume, the name will be generated based on the volume name. If the consistency group contains more than one volume, the name is required.
+
+
+|namespaces
+|array[link:#namespaces[namespaces]]
+a|An NVMe namespace is a collection of addressable logical blocks presented to hosts connected to the SVM using the NVMe over Fabrics protocol.
+In ONTAP, an NVMe namespace is located within a volume. Optionally, it can be located within a qtree in a volume.
+
+An NVMe namespace is created to a specified size using thin or thick provisioning as determined by the volume on which it is created. NVMe namespaces support being cloned. An NVMe namespace cannot be renamed, resized, or moved to a different volume. NVMe namespaces do not support the assignment of a QoS policy for performance management, but a QoS policy can be assigned to the volume containing the namespace. See the NVMe namespace object model to learn more about each of the properties supported by the NVMe namespace REST API.
+
+An NVMe namespace must be mapped to an NVMe subsystem to grant access to the subsystem's hosts. Hosts can then access the NVMe namespace and perform I/O using the NVMe over Fabrics protocol.
+
+* maxItems: 16
+* minItems: 0
+* uniqueItems: 1
+* Introduced in: 9.10
+* x-ntap-modifyOnly: true
+
+
+|parent_consistency_group
+|link:#parent_consistency_group[parent_consistency_group]
+a|The parent consistency group.
+
+
+|qos
+|link:#qos[qos]
+a|
+
+|restore_to
+|link:#restore_to[restore_to]
+a|Use to restore a consistency group to a previous Snapshot copy
+
+
+|snapshot_policy
+|link:#snapshot_policy_reference[snapshot_policy_reference]
+a|This is a reference to the Snapshot copy policy.
+
+
+|space
+|link:#space[space]
+a|Space information for the consistency group.
+
+
+|svm
+|link:#svm[svm]
+a|The Storage Virtual Machine (SVM) in which the consistency group is located.
+
+
+|tiering
+|link:#tiering[tiering]
+a|The tiering placement and policy definitions for volumes in this consistency group.
+
+
+|uuid
+|string
+a|The unique identifier of the consistency group. The UUID is generated by ONTAP when the consistency group is created.
+
+* example: 1cd8a442-86d1-11e0-ae1c-123478563412
+* Introduced in: 9.10
+* readOnly: 1
+
+
+|volumes
+|array[link:#volumes[volumes]]
+a|A consistency group is a mutually exclusive aggregation of volumes or other consistency groups. A volume can only be associated with one direct parent consistency group.
+
+The volumes array can be used to create new volumes in the consistency group, add existing volumes to the consistency group, or modify existing volumes that are already members of the consistency group.
+
+The total number of volumes across all child consistency groups contained in a consistency group is constrained by the same limit.
+
+
+|===
+
+
+[#error_arguments]
+[.api-collapsible-fifth-title]
+error_arguments
+
+[cols=3*,options=header]
+|===
+|Name
+|Type
+|Description
+
+|code
+|string
+a|Argument code
+
+
+|message
+|string
+a|Message argument
+
+
+|===
+
+
+[#error]
+[.api-collapsible-fifth-title]
+error
+
+[cols=3*,options=header]
+|===
+|Name
+|Type
+|Description
+
+|arguments
+|array[link:#error_arguments[error_arguments]]
+a|Message arguments
+
+
+|code
+|string
+a|Error code
+
+
+|message
+|string
+a|Error message
+
+
+|target
+|string
+a|The target parameter that caused the error.
+
+
+|===
+
+
+//end collapsible .Definitions block
+====
