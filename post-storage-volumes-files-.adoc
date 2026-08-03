@@ -291,9 +291,6 @@ a|
   "fill_enabled": null,
   "group_id": 30,
   "hard_links_count": 1,
-  "holes": [
-    {}
-  ],
   "inode_generation": 214753547,
   "inode_number": 1695,
   "is_empty": "",

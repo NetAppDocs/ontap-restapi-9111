@@ -309,9 +309,6 @@ a|
   "creation_time": "2019-06-12T11:00:16-04:00",
   "group_id": 30,
   "hard_links_count": 1,
-  "holes": [
-    {}
-  ],
   "inode_generation": 214753547,
   "inode_number": 1695,
   "is_empty": "",
