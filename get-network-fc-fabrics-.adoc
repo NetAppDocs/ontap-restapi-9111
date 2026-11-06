@@ -3,14 +3,25 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'get-network-fc-fabrics-.html'
+keywords: 'fibre channel,fabric retrieval,fcp topology,fc zoneset,network fabrics,primary switch'
 summary: 'Retrieve an FC fabric'
 ---
 
 = Retrieve an FC fabric
+:imagesdir: ./media/
+
+[.lead]
+Retrieves information about a Fibre Channel fabric to understand its configuration and connectivity within your network environment.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/network/fc/fabrics/{name}`#
 
-*Introduced In:* 9.11
+== Introduced in
+
+ONTAP 9.11
+
+== Usage notes
 
 Retrieves a Fibre Channel fabric.
 

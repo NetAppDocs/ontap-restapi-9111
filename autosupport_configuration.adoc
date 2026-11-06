@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'autosupport_configuration.html'
+keywords: 'autosupport configuration,autosupport connectivity,netapp autosupport,cluster configuration,autosupport smtp'
 summary: 'AutoSupport configuration'
 ---
 
 = AutoSupport configuration
+:imagesdir: ./media/
 
-
+[.lead]
+Access and configure AutoSupport settings to manage the call home mechanism in your cluster. Use GET calls to retrieve configuration details and check connectivity, while PATCH calls allow modifications to the AutoSupport configuration.
 
 == Overview
 

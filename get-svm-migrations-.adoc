@@ -3,16 +3,23 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'get-svm-migrations-.html'
+keywords: 'migration status,retrieve svm,svm migration,data svm,individual svm'
 summary: 'Retrieve the migration status for an SVM'
 ---
 
 = Retrieve the migration status for an SVM
+:imagesdir: ./media/
+
+[.lead]
+Retrieves the migration status of an individual SVM to monitor its progress and assess any actions needed during the migration process.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/svm/migrations/{uuid}`#
 
-*Introduced In:* 9.10
+== Introduced in
 
-Retrieves the migration status of an individual SVM.
+ONTAP 9.10
 
 == Important notes
 

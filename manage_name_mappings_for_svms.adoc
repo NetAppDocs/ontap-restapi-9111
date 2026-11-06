@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'manage_name_mappings_for_svms.html'
+keywords: 'name mappings, unix identities, cifs identities, svm conversion, storage virtual machine'
 summary: 'Manage name mappings for SVMs'
 ---
 
 = Manage name mappings for SVMs
+:imagesdir: ./media/
 
-
+[.lead]
+Manage name mappings to translate identities between CIFS, UNIX, and Kerberos protocols for seamless file access across different client types. Use these endpoints to ensure accurate user credential mapping on Storage Virtual Machines (SVMs) based on defined conversion rules and priority lists.
 
 == Overview
 

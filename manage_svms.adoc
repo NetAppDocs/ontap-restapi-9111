@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'manage_svms.html'
+keywords: 'manage svms,svm resources,cifs configuration,nfs protocol,svm health'
 summary: 'Manage SVMs'
 ---
 
 = Manage SVMs
+:imagesdir: ./media/
 
-
+[.lead]
+Administrators manage SVMs within a cluster to control resources and configurations effectively. This involves overseeing volumes, protocols, and services based on assigned capabilities, ensuring efficient data access and service management.
 
 == Managing SVMs
 

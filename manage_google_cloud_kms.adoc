@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'manage_google_cloud_kms.html'
+keywords: 'google cloud kms,ontap encryption keys,key management,svm scope,key ring location'
 summary: 'Manage Google Cloud KMS'
 ---
 
 = Manage Google Cloud KMS
+:imagesdir: ./media/
 
-
+[.lead]
+Manage Google Cloud Key Management Services to securely store encryption keys using the cloud-based KMS. Deploy a Google Cloud application with necessary access and provide ONTAP with details like project ID and key ring name for integration.
 
 == Overview
 

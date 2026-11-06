@@ -3,16 +3,23 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'get-security-key-managers.html'
+keywords: 'key managers,retrieve keys,key store,volume encryption,external servers'
 summary: 'Retrieve key managers'
 ---
 
 = Retrieve key managers
+:imagesdir: ./media/
+
+[.lead]
+Retrieves key managers to access and manage encryption keys, ensuring secure data protection for your storage system.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/security/key-managers`#
 
-*Introduced In:* 9.6
+== Introduced in
 
-Retrieves key managers.
+ONTAP 9.6
 
 == Expensive properties
 

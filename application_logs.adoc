@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'application_logs.html'
+keywords: 'application logs,ontap system,ems events,autosupport generation,event severity'
 summary: 'Application logs'
 ---
 
 = Application logs
+:imagesdir: ./media/
 
-
+[.lead]
+Log application events on the ONTAP system using these endpoints. Events can be recorded as EMS events and, depending on severity, may generate AutoSupports.
 
 == Overview
 

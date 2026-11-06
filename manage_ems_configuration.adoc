@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'manage_ems_configuration.html'
+keywords: 'event management,notification configuration,email destination,filter rules,event severity,notification setup'
 summary: 'Manage EMS configuration'
 ---
 
 = Manage EMS configuration
+:imagesdir: ./media/
 
-
+[.lead]
+Manage EMS configuration to collect, process, and report on events within your ONTAP environment. Use these endpoints to query observed events, customize event handling, and configure notification settings.
 
 == Overview
 

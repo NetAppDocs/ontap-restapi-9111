@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'manage_cluster_firmware_history.html'
+keywords: 'cluster firmware,firmware history,update requests,firmware retrieval,firmware state'
 summary: 'Manage cluster firmware history'
 ---
 
 = Manage cluster firmware history
+:imagesdir: ./media/
 
-
+[.lead]
+Retrieve a history of firmware update requests using this API. Utilize GET calls to access detailed records of past updates, which can be filtered to refine the results.
 
 == Overview
 

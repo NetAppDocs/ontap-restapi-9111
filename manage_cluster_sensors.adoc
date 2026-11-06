@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'manage_cluster_sensors.html'
+keywords: 'platform sensors,environment sensors,cluster sensors,node sensors,sensor values,threshold state'
 summary: 'Manage cluster sensors'
 ---
 
 = Manage cluster sensors
+:imagesdir: ./media/
 
-
+[.lead]
+Retrieve detailed information about platform environment sensors using this API. Access sensor values and monitor conditions to ensure optimal cluster performance.
 
 = Overview
 

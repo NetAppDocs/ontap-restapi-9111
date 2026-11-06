@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'manage_storage_qtrees.html'
+keywords: 'qtree management,qtree creation,qtree qos policy,qtree modification,qtree deletion,qtree retrieval'
 summary: 'Manage storage qtrees'
 ---
 
 = Manage storage qtrees
+:imagesdir: ./media/
 
-
+[.lead]
+Manage the lifecycle of storage qtrees within volumes using these endpoints. You can create, retrieve, modify, and delete qtrees to optimize your file system organization and apply QoS policies for performance management.
 
 == Overview
 

@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'manage_security_certificates.html'
+keywords: 'security certificates,certificate management,ssl communication,common name,certificate signing request'
 summary: 'Manage security certificates'
 ---
 
 = Manage security certificates
+:imagesdir: ./media/
 
-
+[.lead]
+Access and manage security certificate information with these endpoints. Use them to install, retrieve, and delete certificates within your ONTAP environment, facilitating secure communication and authentication.
 
 == Overview
 

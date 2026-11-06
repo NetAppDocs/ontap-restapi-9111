@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'retrieve_fc_fabrics.html'
+keywords: 'fibre channel,fabric zones,switch connections,cache refresh,active zoneset'
 summary: 'Retrieve FC fabrics'
 ---
 
 = Retrieve FC fabrics
+:imagesdir: ./media/
 
-
+[.lead]
+Access the Fibre Channel (FC) fabric REST APIs to retrieve comprehensive FC network information. Use these endpoints to examine connections between the ONTAP cluster and the FC fabric, identify switches, and review zones within the active zoneset. Data is retrieved from a cache to enhance responsiveness, with updates triggered based on the specified maximum age parameter.
 
 == Overview
 

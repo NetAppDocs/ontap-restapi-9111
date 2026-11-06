@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'manage_dns_configurations.html'
+keywords: 'dns configuration, dns subsystem, dynamic dns, dns status, domain name'
 summary: 'Manage DNS configurations'
 ---
 
 = Manage DNS configurations
+:imagesdir: ./media/
 
-
+[.lead]
+Access and manage DNS configurations through endpoints that display DNS information and control the DNS subsystem. These endpoints are essential for setting domain names and DNS servers across your storage virtual machines (SVMs).
 
 == Overview
 

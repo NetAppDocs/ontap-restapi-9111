@@ -3,16 +3,23 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'patch-network-fc-interfaces-.html'
+keywords: 'fc interface,interface update,network fc,fc modify,interface uuid'
 summary: 'Update an FC interface'
 ---
 
 = Update an FC interface
+:imagesdir: ./media/
+
+[.lead]
+Updates an FC interface to modify its configuration settings or adjust its operational parameters within your network environment.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-patch]#PATCH# [.api-doc-code-block]#`/network/fc/interfaces/{uuid}`#
 
-*Introduced In:* 9.6
+== Introduced in
 
-Updates an FC interface.
+ONTAP 9.6
 
 == Related ONTAP commands
 

@@ -3,16 +3,23 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'post-name-services-local-hosts.html'
+keywords: 'local hosts,ip mapping,hostname mapping,ipv4 address,ipv6 address,svm mapping'
 summary: 'Create a new IP to hostname mapping'
 ---
 
 = Create a new IP to hostname mapping
+:imagesdir: ./media/
+
+[.lead]
+Creates a new IP to hostname mapping, establishing how network resources identify the system by name. Use this to manage DNS configurations within the specified storage virtual machine (SVM).
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/name-services/local-hosts`#
 
-*Introduced In:* 9.10
+== Introduced in
 
-Creates a new IP to hostname mapping.
+ONTAP 9.10
 
 == Required properties
 

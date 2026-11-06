@@ -3,14 +3,25 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'delete-application-applications-snapshots-.html'
+keywords: 'delete snapshot,snapshot copy,application snapshot,remove snapshot,snapshot cleanup'
 summary: 'Delete an application Snapshot copy'
 ---
 
 = Delete an application Snapshot copy
+:imagesdir: ./media/
+
+[.lead]
+Deletes a Snapshot copy of an application. This operation is typically used when you need to remove outdated or unnecessary Snapshot copies to manage storage space efficiently.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-delete]#DELETE# [.api-doc-code-block]#`/application/applications/{application.uuid}/snapshots/{uuid}`#
 
-*Introduced In:* 9.6
+== Introduced in
+
+ONTAP 9.6
+
+== Usage notes
 
 Delete a Snapshot copy of an application
 

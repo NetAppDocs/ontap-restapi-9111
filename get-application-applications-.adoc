@@ -3,14 +3,25 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'get-application-applications-.html'
+keywords: 'application retrieval,uuid lookup,template details,statistics report,property overview'
 summary: 'Retrieve an application'
 ---
 
 = Retrieve an application
+:imagesdir: ./media/
+
+[.lead]
+Retrieves details about an application, including its configuration and usage statistics. Use this information to understand the application's current state and performance metrics.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/application/applications/{uuid}`#
 
-*Introduced In:* 9.6
+== Introduced in
+
+ONTAP 9.6
+
+== Usage notes
 
 Retrieves an application
 

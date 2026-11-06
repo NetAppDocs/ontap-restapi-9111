@@ -3,14 +3,25 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'patch-name-services-cache-unix-group-settings-.html'
+keywords: 'unix-group cache,unix-group settings,svm uuid,cache update,cache settings'
 summary: 'Update UNIX group cache settings'
 ---
 
 = Update UNIX group cache settings
+:imagesdir: ./media/
+
+[.lead]
+Updates UNIX group cache settings to modify how the system manages cached UNIX group information. Use this endpoint to adjust configurations for improved cache performance or to align with specific administrative policies.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-patch]#PATCH# [.api-doc-code-block]#`/name-services/cache/unix-group/settings/{svm.uuid}`#
 
-*Introduced In:* 9.11
+== Introduced in
+
+ONTAP 9.11
+
+== Usage notes
 
 Updates unix-group cache settings.
 

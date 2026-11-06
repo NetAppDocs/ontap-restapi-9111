@@ -3,14 +3,25 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'get-protocols-locks.html'
+keywords: 'lock details,protocol locks,share lock,state filter,byte lock,volume name'
 summary: 'Retrieve lock details'
 ---
 
 = Retrieve lock details
+:imagesdir: ./media/
+
+[.lead]
+Retrieves details about locks, which can help you understand the current state of locked resources within your environment.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/protocols/locks`#
 
-*Introduced In:* 9.10
+== Introduced in
+
+ONTAP 9.10
+
+== Usage notes
 
 Retrieves locks details.
 

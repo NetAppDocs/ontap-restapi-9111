@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'view_nfs_connected_clients.html'
+keywords: 'nfs clients,connected clients,nfs server,client ip,idle duration,export policy'
 summary: 'View NFS connected clients'
 ---
 
 = View NFS connected clients
+:imagesdir: ./media/
 
-
+[.lead]
+Retrieve information about currently connected NFS clients, including those idle or recently unmounted. Use these endpoints to monitor client activity and manage session details based on protocol versions and export policies.
 
 == Overview
 

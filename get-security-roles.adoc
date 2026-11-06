@@ -3,14 +3,25 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'get-security-roles.html'
+keywords: 'roles,security roles,cluster roles,privileges,role scope,role owner'
 summary: 'Retrieve a list of roles configured in the cluster'
 ---
 
 = Retrieve a list of roles configured in the cluster
+:imagesdir: ./media/
+
+[.lead]
+Gathers information about the roles configured in your cluster, helping you understand the access permissions and security configurations currently in place.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/security/roles`#
 
-*Introduced In:* 9.6
+== Introduced in
+
+ONTAP 9.6
+
+== Usage notes
 
 Retrieves a list of roles configured in the cluster.
 

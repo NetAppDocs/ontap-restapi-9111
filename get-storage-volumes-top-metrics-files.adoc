@@ -3,14 +3,25 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'get-storage-volumes-top-metrics-files.html'
+keywords: 'volume uuid,io activity,top metrics,most io files,read write filters'
 summary: 'Retrieve files with the most I/O activity'
 ---
 
 = Retrieve files with the most I/O activity
+:imagesdir: ./media/
+
+[.lead]
+Retrieves a list of files that have the highest I/O activity. This helps you identify heavily accessed files for performance monitoring or optimization.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/storage/volumes/{volume.uuid}/top-metrics/files`#
 
-*Introduced In:* 9.10
+== Introduced in
+
+ONTAP 9.10
+
+== Usage notes
 
 Retrieves a list of files with the most IO activity.
 

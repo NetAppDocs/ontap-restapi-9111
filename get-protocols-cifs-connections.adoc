@@ -3,14 +3,25 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'get-protocols-cifs-connections.html'
+keywords: 'cifs connections,svm cifs,connection information,cifs protocol,cifs session,node cifs'
 summary: 'Retrieve the CIFS connection information for all SVMs'
 ---
 
 = Retrieve the CIFS connection information for all SVMs
+:imagesdir: ./media/
+
+[.lead]
+Retrieves CIFS connection information for all storage virtual machines (SVMs), helping you understand and manage CIFS connections across your system.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/protocols/cifs/connections`#
 
-*Introduced In:* 9.11
+== Introduced in
+
+ONTAP 9.11
+
+== Usage notes
 
 Retrieves the CIFS connection information for all SVMs.
 

@@ -3,14 +3,25 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'post-storage-snaplock-litigations.html'
+keywords: 'snaplock litigation,legal hold,start litigation,storage snaplock,volume name,litigation name'
 summary: 'Start a legal-hold operation'
 ---
 
 = Start a legal-hold operation
+:imagesdir: ./media/
+
+[.lead]
+Initiates a legal hold operation to secure files for litigation by specifying the file path and volume details. Use this endpoint when you need to preserve data integrity during legal proceedings.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/storage/snaplock/litigations`#
 
-*Introduced In:* 9.7
+== Introduced in
+
+ONTAP 9.7
+
+== Usage notes
 
 Starts a  Legal-Hold.
 

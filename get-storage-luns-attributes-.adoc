@@ -3,14 +3,25 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'get-storage-luns-attributes-.html'
+keywords: 'lun attribute,retrieve lun,storage luns,lun identifier,attribute name'
 summary: 'Retrieve a LUN attribute'
 ---
 
 = Retrieve a LUN attribute
+:imagesdir: ./media/
+
+[.lead]
+Accesses a LUN attribute to review its current configuration details within your storage environment.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/storage/luns/{lun.uuid}/attributes/{name}`#
 
-*Introduced In:* 9.10
+== Introduced in
+
+ONTAP 9.10
+
+== Usage notes
 
 Retrieves a LUN attribute.
 

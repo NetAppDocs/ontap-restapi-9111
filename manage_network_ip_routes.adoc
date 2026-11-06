@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'manage_network_ip_routes.html'
+keywords: 'network routes,ip routing,ipspaces,cluster scoped,svm scoped'
 summary: 'Manage network IP routes'
 ---
 
 = Manage network IP routes
+:imagesdir: ./media/
 
-
+[.lead]
+Manage network IP routes across your cluster using operations like retrieval, creation, and deletion. Use these endpoints to display current configurations, add new routes, or remove existing ones as needed.
 
 == Overview
 

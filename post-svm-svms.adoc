@@ -3,14 +3,25 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'post-svm-svms.html'
+keywords: 'svm creation,provisioning svm,ipspace default,space enforcement,svm logical reporting'
 summary: 'Create and provision an SVM'
 ---
 
 = Create and provision an SVM
+:imagesdir: ./media/
+
+[.lead]
+Creates and provisions a storage virtual machine (SVM), which involves setting up its configuration and network interfaces. This operation is useful for managing storage resources within your network environment, particularly when you need to tailor the SVM to specific protocol requirements or network settings.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/svm/svms`#
 
-*Introduced In:* 9.6
+== Introduced in
+
+ONTAP 9.6
+
+== Usage notes
 
 Creates and provisions an SVM. If no IPspace is provided, then the SVM is created on the `Default` IPspace.
 

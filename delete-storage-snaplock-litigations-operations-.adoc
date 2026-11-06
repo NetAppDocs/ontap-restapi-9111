@@ -3,14 +3,25 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'delete-storage-snaplock-litigations-operations-.html'
+keywords: 'snaplock,legal hold,litigation operation,abort operation,litigation cleanup'
 summary: 'Cancel the ongoing legal-hold operation'
 ---
 
 = Cancel the ongoing legal-hold operation
+:imagesdir: ./media/
+
+[.lead]
+Cancels an ongoing legal-hold operation, stopping any further actions related to the hold. This does not undo changes already applied, so you may need to perform additional steps to complete the process.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-delete]#DELETE# [.api-doc-code-block]#`/storage/snaplock/litigations/{litigation.id}/operations/{id}`#
 
-*Introduced In:* 9.7
+== Introduced in
+
+ONTAP 9.7
+
+== Usage notes
 
 Aborts the ongoing legal-hold operation. An abort does not rollback any changes already made. You must re-run begin or end for cleanup.
 

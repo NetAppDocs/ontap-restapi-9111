@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'manage_file_security_permissions_and_audit_policies.html'
+keywords: 'ntfs file security, audit policies, security descriptor, access control entries, storage level access guard'
 summary: 'Manage file security permissions and audit policies'
 ---
 
 = Manage file security permissions and audit policies
+:imagesdir: ./media/
 
-
+[.lead]
+Manage NTFS file security permissions and audit policies directly through the API without requiring a client. Simplify the process of creating and applying NTFS security descriptors by combining multiple steps into a single API call, streamlining the management of access control entries within discretionary and system access control lists. Additionally, configure Storage-Level Access Guard (SLAG) ACLs on volumes or qtrees with enhanced security measures that are modifiable only by storage administrators.
 
 == Overview
 

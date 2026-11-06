@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'manage_ldap_schemas.html'
+keywords: 'ldap schemas,manage ldap,windows ldap,active directory ldap,unix ldap'
 summary: 'Manage LDAP schemas'
 ---
 
 = Manage LDAP schemas
+:imagesdir: ./media/
 
-
+[.lead]
+Utilize these endpoints to manage and retrieve information about LDAP schemas within your network environment. These schemas are essential for integrating Active Directory and UNIX-based systems, ensuring seamless identity management across diverse platforms.
 
 == Overview
 

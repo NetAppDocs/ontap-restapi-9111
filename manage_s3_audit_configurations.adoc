@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'manage_s3_audit_configurations.html'
+keywords: 's3 audit,log rotation,log retention,s3 events,storage virtual machines'
 summary: 'Manage S3 audit configurations'
 ---
 
 = Manage S3 audit configurations
+:imagesdir: ./media/
 
-
+[.lead]
+Manage S3 audit configurations to track and log specific S3 events on storage virtual machines (SVMs), enhancing security by identifying potential issues and providing evidence of breaches.
 
 == Overview
 

@@ -3,16 +3,23 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'get-protocols-fpolicy.html'
+keywords: 'fpolicy configuration,fpolicy policy,fpolicy scope,fpolicy event,fpolicy external engine'
 summary: 'Retrieve an FPolicy configuration'
 ---
 
 = Retrieve an FPolicy configuration
+:imagesdir: ./media/
+
+[.lead]
+Retrieves an FPolicy configuration to review the policy settings applied to file operations within your storage environment. This helps you ensure compliance and optimize file access security measures.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/protocols/fpolicy`#
 
-*Introduced In:* 9.6
+== Introduced in
 
-Retrieves an FPolicy configuration.
+ONTAP 9.6
 
 == Related ONTAP commands
 

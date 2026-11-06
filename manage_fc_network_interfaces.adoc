@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'manage_fc_network_interfaces.html'
+keywords: 'fibre channel,svm storage,fc port,performance monitoring,interface placement,recommendations'
 summary: 'Manage FC network interfaces'
 ---
 
 = Manage FC network interfaces
+:imagesdir: ./media/
 
-
+[.lead]
+Fibre Channel (FC) interfaces serve as the logical endpoints for FC network connections to a Storage Virtual Machine (SVM), facilitating access to storage within the SVM using either Fibre Channel Protocol (FCP) or NVMe over FC. Use the FC interface REST API to create, delete, update, and discover FC interfaces, along with obtaining status information. Monitor performance by observing metrics and statistics properties to assess IOPS, latency, and throughput.
 
 == Overview
 

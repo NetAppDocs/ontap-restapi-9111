@@ -3,17 +3,23 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'get-cluster-schedules.html'
+keywords: 'cluster schedules,retrieve schedule,cron filter,schedule retrieval,cluster name,uuid filter'
 summary: 'Retrieve schedules'
 ---
 
 = Retrieve schedules
+:imagesdir: ./media/
+
+[.lead]
+Retrieves a schedule to view its details and configuration for managing tasks in your environment.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/cluster/schedules`#
 
-*Introduced In:* 9.6
+== Introduced in
 
-Retrieves a schedule.
-
+ONTAP 9.6
 
 == Parameters
 

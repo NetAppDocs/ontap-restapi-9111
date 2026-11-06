@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'retrieve_cluster_chassis.html'
+keywords: 'cluster chassis,retrieve chassis,list chassis,specific chassis,chassis state'
 summary: 'Retrieve cluster chassis'
 ---
 
 = Retrieve cluster chassis
+:imagesdir: ./media/
 
-
+[.lead]
+Use the chassis GET API to retrieve detailed information about each chassis within your cluster. This information helps you verify the state and configuration of individual chassis components.
 
 == Overview
 

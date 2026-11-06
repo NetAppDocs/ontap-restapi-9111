@@ -3,16 +3,23 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'post-name-services-ldap-schemas.html'
+keywords: 'ldap schema,create ldap schema,ldap schemas,modify ldap schema,default ldap schema,cserver uuid'
 summary: 'Create an LDAP schema'
 ---
 
 = Create an LDAP schema
+:imagesdir: ./media/
+
+[.lead]
+Creates an LDAP schema to define and manage directory attributes and their relationships. Use this when you need to customize or extend the default LDAP schemas provided.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/name-services/ldap-schemas`#
 
-*Introduced In:* 9.11
+== Introduced in
 
-Creates an LDAP schema.
+ONTAP 9.11
 
 == Important notes
 

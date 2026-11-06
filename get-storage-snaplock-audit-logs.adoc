@@ -3,14 +3,25 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'get-storage-snaplock-audit-logs.html'
+keywords: 'audit logs,snaplock logs,svm audit,log retention,storage volumes'
 summary: 'Retrieve SVMs configured with audit log volumes'
 ---
 
 = Retrieve SVMs configured with audit log volumes
+:imagesdir: ./media/
+
+[.lead]
+Retrieves a list of SVMs that have audit log volumes configured. Use this to review which SVMs are set up for audit logging purposes.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/storage/snaplock/audit-logs`#
 
-*Introduced In:* 9.7
+== Introduced in
+
+ONTAP 9.7
+
+== Usage notes
 
 Retrieves a list of SVMs configured with audit log volumes.
 

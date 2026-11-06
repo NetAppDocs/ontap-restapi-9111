@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'view_and_update_login_message_configuration.html'
+keywords: 'login message,login banner,login configuration,cluster message,svm message'
 summary: 'View and update login message configuration'
 ---
 
 = View and update login message configuration
+:imagesdir: ./media/
 
-
+[.lead]
+Use the login messages configuration endpoints to display and manage login messages in your cluster. Retrieve and update configurations by UUID to customize the login experience for users accessing the system.
 
 == Overview
 

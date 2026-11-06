@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'view_and_update_kerberos_interfaces.html'
+keywords: 'kerberos interfaces,update kerberos,kerberos configuration,nfs kerberos,kerberos details'
 summary: 'View and update Kerberos interfaces'
 ---
 
 = View and update Kerberos interfaces
+:imagesdir: ./media/
 
-
+[.lead]
+Access and modify Kerberos interface configurations to manage secure connections using the ONTAP REST API. Retrieve current settings or update them as needed to ensure proper authentication and encryption mechanisms are in place for NFS protocols.
 
 == Examples
 

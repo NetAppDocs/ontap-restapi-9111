@@ -3,14 +3,25 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'post-application-applications-snapshots-restore.html'
+keywords: 'application snapshot,restore snapshot,snapshot copy,storage elements,access settings'
 summary: 'Restore an application Snapshot copy'
 ---
 
 = Restore an application Snapshot copy
+:imagesdir: ./media/
+
+[.lead]
+Restores an application Snapshot copy to revert storage elements back to their state at the time the Snapshot was taken, facilitating data recovery to a previous point in time.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/application/applications/{application.uuid}/snapshots/{uuid}/restore`#
 
-*Introduced In:* 9.6
+== Introduced in
+
+ONTAP 9.6
+
+== Usage notes
 
 Restore an application snapshot
 

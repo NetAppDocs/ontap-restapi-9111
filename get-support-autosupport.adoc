@@ -3,14 +3,25 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'get-support-autosupport.html'
+keywords: 'autosupport configuration,cluster connectivity,connection issue,corrective action,http server,smtp server'
 summary: 'Retrieve the AutoSupport configuration'
 ---
 
 = Retrieve the AutoSupport configuration
+:imagesdir: ./media/
+
+[.lead]
+Retrieves the AutoSupport configuration of the cluster to understand its current settings and identify any connectivity issues. This information helps you ensure that AutoSupport is functioning correctly and allows you to address any reported problems effectively.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/support/autosupport`#
 
-*Introduced In:* 9.6
+== Introduced in
+
+ONTAP 9.6
+
+== Usage notes
 
 Retrieves the AutoSupport configuration of the cluster and if requested, returns connectivity issues with the AutoSupport configuration.
 

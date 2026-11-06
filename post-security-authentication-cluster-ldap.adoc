@@ -3,14 +3,25 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'post-security-authentication-cluster-ldap.html'
+keywords: 'ldap configuration,ldap servers,bind dn,base dn,ldaps enabled,ipv6 enabled'
 summary: 'Create the LDAP configuration for the cluster'
 ---
 
 = Create the LDAP configuration for the cluster
+:imagesdir: ./media/
+
+[.lead]
+Configures the LDAP settings for the cluster, establishing how it connects to LDAP servers for authentication and directory services. Use this to define essential parameters like server addresses and binding credentials for LDAP interactions.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/security/authentication/cluster/ldap`#
 
-*Introduced In:* 9.6
+== Introduced in
+
+ONTAP 9.6
+
+== Usage notes
 
 A cluster can have only one LDAP configuration. IPv6 must be enabled if IPv6 family addresses are specified.
 

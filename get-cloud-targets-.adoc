@@ -3,14 +3,25 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'get-cloud-targets-.html'
+keywords: 'cloud target,retrieve cloud,cloud storage,object store,uuid lookup'
 summary: 'Retrieve a cloud target'
 ---
 
 = Retrieve a cloud target
+:imagesdir: ./media/
+
+[.lead]
+Accesses a specific cloud target by using its UUID to obtain detailed information about the target's configuration.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/cloud/targets/{uuid}`#
 
-*Introduced In:* 9.6
+== Introduced in
+
+ONTAP 9.6
+
+== Usage notes
 
 Retrieves the cloud target specified by the UUID.
 

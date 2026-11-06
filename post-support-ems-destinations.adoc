@@ -3,16 +3,23 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'post-support-ems-destinations.html'
+keywords: 'event destination,notification destination,event create,destination type,filter names,client certificate'
 summary: 'Create an event destination'
 ---
 
 = Create an event destination
+:imagesdir: ./media/
+
+[.lead]
+Creates an event destination to define where event notifications are sent. Use this when you need to specify a target for event alerts and notifications based on the chosen destination type.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/support/ems/destinations`#
 
-*Introduced In:* 9.6
+== Introduced in
 
-Creates an event destination.
+ONTAP 9.6
 
 == Required properties
 

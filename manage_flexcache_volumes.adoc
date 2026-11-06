@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'manage_flexcache_volumes.html'
+keywords: 'flexcache volumes, flexvol, svm, cross cluster, intra vserver'
 summary: 'Manage FlexCache volumes'
 ---
 
 = Manage FlexCache volumes
+:imagesdir: ./media/
 
-
+[.lead]
+FlexCache volume management endpoints facilitate the creation, retrieval, modification, and deletion of FlexCache configurations. Use these APIs to optimize data access across clusters and Vservers by leveraging the capabilities of FlexCache as a persistent cache for origin volumes.
 
 :doctype: book
 

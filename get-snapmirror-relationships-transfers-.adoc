@@ -3,14 +3,25 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'get-snapmirror-relationships-transfers-.html'
+keywords: 'snapmirror transfer,relationship attributes,transfer attributes,ongoing transfer,snapmirror relationship,transfer uuid'
 summary: 'Retrieve attributes of an ongoing SnapMirror transfer'
 ---
 
 = Retrieve attributes of an ongoing SnapMirror transfer
+:imagesdir: ./media/
+
+[.lead]
+Retrieves the attributes of an ongoing SnapMirror transfer to monitor the progress and details of data replication tasks between storage systems.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/snapmirror/relationships/{relationship.uuid}/transfers/{uuid}`#
 
-*Introduced In:* 9.6
+== Introduced in
+
+ONTAP 9.6
+
+== Usage notes
 
 Retrieves the attributes of a specific ongoing SnapMirror transfer.
 

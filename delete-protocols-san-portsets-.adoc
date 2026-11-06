@@ -3,16 +3,23 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'delete-protocols-san-portsets-.html'
+keywords: 'ontap portset,delete portset,san portset,ontap san,portset uuid,ontap delete'
 summary: 'Delete a portset'
 ---
 
 = Delete a portset
+:imagesdir: ./media/
+
+[.lead]
+Deletes a portset to remove its configuration and settings from your storage environment. This operation is typically used when a portset is no longer needed or requires reconfiguration.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-delete]#DELETE# [.api-doc-code-block]#`/protocols/san/portsets/{uuid}`#
 
-*Introduced In:* 9.9
+== Introduced in
 
-Deletes a portset.
+ONTAP 9.9
 
 == Related ONTAP commands
 

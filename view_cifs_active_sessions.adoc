@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'view_cifs_active_sessions.html'
+keywords: 'cifs sessions, smb clients, svm sessions, volume information, session details'
 summary: 'View CIFS active sessions'
 ---
 
 = View CIFS active sessions
+:imagesdir: ./media/
 
-
+[.lead]
+Access CIFS session management endpoints to list, retrieve, and delete active SMB client sessions on your storage virtual machine (SVM). Use these endpoints to monitor current CIFS activity and manage session connections efficiently.
 
 == Overview
 

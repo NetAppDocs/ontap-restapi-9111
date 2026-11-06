@@ -3,14 +3,25 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'patch-network-ip-subnets-.html'
+keywords: 'update subnet,ip subnet,network subnet,modify subnet,subnet uuid'
 summary: 'Update an IP subnet'
 ---
 
 = Update an IP subnet
+:imagesdir: ./media/
+
+[.lead]
+Updates the configuration of an existing IP subnet. This is useful when you need to modify network settings or adjust subnet parameters in response to changes in your environment.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-patch]#PATCH# [.api-doc-code-block]#`/network/ip/subnets/{uuid}`#
 
-*Introduced In:* 9.11
+== Introduced in
+
+ONTAP 9.11
+
+== Usage notes
 
 Updates an IP subnet.
 

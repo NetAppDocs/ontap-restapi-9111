@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'manage_netgroup_cache_settings.html'
+keywords: 'netgroup cache,netgroup settings,manage netgroup,cache settings,update cache,svm netgroup'
 summary: 'Manage netgroup cache settings'
 ---
 
 = Manage netgroup cache settings
+:imagesdir: ./media/
 
-
+[.lead]
+Retrieve and manage netgroup cache settings to optimize name service performance in your environment. Use these endpoints to adjust cache settings for specific Storage Virtual Machines (SVMs) and ensure efficient data handling.
 
 == Overview
 

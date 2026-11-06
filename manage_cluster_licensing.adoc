@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'manage_cluster_licensing.html'
+keywords: 'license management,cluster compliance,feature scope,license format,nlfv2 licenses'
 summary: 'Manage cluster licensing'
 ---
 
 = Manage cluster licensing
+:imagesdir: ./media/
 
-
+[.lead]
+Use these endpoints to manage cluster licenses, enabling features according to organizational needs and compliance states. Retrieve license information by package or install new licenses to activate features immediately.
 
 == Overview
 

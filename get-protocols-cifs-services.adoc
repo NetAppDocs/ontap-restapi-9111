@@ -3,16 +3,23 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'get-protocols-cifs-services.html'
+keywords: 'cifs servers,retrieves cifs,netbios enabled,smb signing,smb encryption,ldap referral'
 summary: 'Retrieve CIFS servers'
 ---
 
 = Retrieve CIFS servers
+:imagesdir: ./media/
+
+[.lead]
+Retrieves CIFS servers to access their configurations and performance metrics within your storage environment. This helps you manage server settings and monitor their status effectively.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/protocols/cifs/services`#
 
-*Introduced In:* 9.6
+== Introduced in
 
-Retrieves CIFS servers.
+ONTAP 9.6
 
 == Expensive properties
 

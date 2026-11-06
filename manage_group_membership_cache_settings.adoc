@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'manage_group_membership_cache_settings.html'
+keywords: 'group membership,cache settings,manage cache,svm settings,update cache'
 summary: 'Manage group membership cache settings'
 ---
 
 = Manage group membership cache settings
+:imagesdir: ./media/
 
-
+[.lead]
+Manage group-membership cache settings to efficiently retrieve and update caching configurations for your system's group memberships. Use these endpoints to maintain optimal cache performance and ensure timely access to group membership data.
 
 == Overview
 

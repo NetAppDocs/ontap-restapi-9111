@@ -3,16 +3,23 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'get-storage-shelves.html'
+keywords: 'storage shelves,retrieve shelves,shelf collection,storage shelf show,shelf drawer,acp connection'
 summary: 'Retrieve shelves'
 ---
 
 = Retrieve shelves
+:imagesdir: ./media/
+
+[.lead]
+Retrieves a collection of shelves, accessing detailed information about storage shelf configurations. This can be useful for managing hardware inventory or troubleshooting shelf-related issues.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/storage/shelves`#
 
-*Introduced In:* 9.6
+== Introduced in
 
-Retrieves a collection of shelves.
+ONTAP 9.6
 
 == Related ONTAP commands
 

@@ -3,16 +3,23 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'post-protocols-nvme-services.html'
+keywords: 'nvme service,create nvme,svm nvme,nvme protocol,nvme command'
 summary: 'Create an NVMe service'
 ---
 
 = Create an NVMe service
+:imagesdir: ./media/
+
+[.lead]
+Creates an NVMe service to enable NVMe protocol support within a specified SVM. This is essential for managing NVMe storage operations efficiently.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/protocols/nvme/services`#
 
-*Introduced In:* 9.6
+== Introduced in
 
-Creates an NVMe service.
+ONTAP 9.6
 
 == Required properties
 

@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'manage_cifs_dc_configuration.html'
+keywords: 'cifs domain,preferred dc,svm configuration,fqdn,server ip'
 summary: 'Manage CIFS DC configuration'
 ---
 
 = Manage CIFS DC configuration
+:imagesdir: ./media/
 
-
+[.lead]
+Retrieve, create, and delete CIFS domain preferred DC configurations for a specific Storage Virtual Machine (SVM). Use these endpoints to manage configurations effectively within your ONTAP environment.
 
 == Overview
 

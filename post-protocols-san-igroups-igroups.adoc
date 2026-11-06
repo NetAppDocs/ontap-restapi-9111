@@ -3,14 +3,25 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'post-protocols-san-igroups-igroups.html'
+keywords: 'initiator groups,nested groups,igroup uuid,san protocols,lun igroup'
 summary: 'Add nested initiator groups to an initiator group'
 ---
 
 = Add nested initiator groups to an initiator group
+:imagesdir: ./media/
+
+[.lead]
+Adds nested initiator groups to an existing initiator group by specifying their names or UUIDs. Use this operation to organize and manage your SAN environment efficiently.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/protocols/san/igroups/{igroup.uuid}/igroups`#
 
-*Introduced In:* 9.9
+== Introduced in
+
+ONTAP 9.9
+
+== Usage notes
 
 Adds one or more nested initiator groups to an initiator group. A single
 nested initiator group can be added by directly specifying the name or

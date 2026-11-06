@@ -3,14 +3,25 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'get-snapmirror-policies.html'
+keywords: 'snapmirror policies,retrieve policies,async sync policies,snapmirror async,snapmirror sync'
 summary: 'Retrieve SnapMirror async and sync policy types'
 ---
 
 = Retrieve SnapMirror async and sync policy types
+:imagesdir: ./media/
+
+[.lead]
+Retrieves SnapMirror policies of both async and sync types, which helps you understand the current configurations for data replication.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/snapmirror/policies`#
 
-*Introduced In:* 9.6
+== Introduced in
+
+ONTAP 9.6
+
+== Usage notes
 
 Retrieves SnapMirror policies of type "async" and "sync".
 

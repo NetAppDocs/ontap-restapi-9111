@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'view_netbios_information.html'
+keywords: 'netbios information,wins servers,netbios names,cifs netbios,svm cluster'
 summary: 'View NetBIOS information'
 ---
 
 = View NetBIOS information
+:imagesdir: ./media/
 
-
+[.lead]
+Access NetBIOS information endpoints to view details about NBT connections within your cluster. These endpoints help troubleshoot NetBIOS name resolution issues by displaying associated IP addresses, WINS server details, and registered NetBIOS names.
 
 Displays information about NBT connections for the cluster. Displays the IP address associated with the interfaces, the IP addresses of the WINS servers in use, and information about the registered NetBIOS names for the cluster. You can use this command to troubleshoot NetBIOS name resolution problems.
 

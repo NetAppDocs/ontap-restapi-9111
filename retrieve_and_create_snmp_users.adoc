@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'retrieve_and_create_snmp_users.html'
+keywords: 'snmp users,retrieve snmp,create snmp,community user,local snmpv3,remote snmpv3'
 summary: 'Retrieve and create SNMP users'
 ---
 
 = Retrieve and create SNMP users
+:imagesdir: ./media/
 
-
+[.lead]
+Define, retrieve, and add SNMP users to manage SNMP communication with ONTAP. Use community users for SNMPv1/SNMPv2c protocol queries or SNMPv3 users for enhanced security with local or remote configurations.
 
 == Overview
 

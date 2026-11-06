@@ -3,14 +3,25 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'get-network-http-proxy.html'
+keywords: 'http proxy configurations,svm configurations,cluster ipspaces,http proxy settings,network proxy settings,svm http proxy'
 summary: 'Retrieve HTTP proxy configurations for all SVMs and cluster IPspaces'
 ---
 
 = Retrieve HTTP proxy configurations for all SVMs and cluster IPspaces
+:imagesdir: ./media/
+
+[.lead]
+Retrieves the HTTP proxy configurations for all SVMs and cluster IPspaces. This helps you manage and review the proxy settings across your network environments.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/network/http-proxy`#
 
-*Introduced In:* 9.7
+== Introduced in
+
+ONTAP 9.7
+
+== Usage notes
 
 Retrieves the HTTP proxy configurations of all the SVMs and Cluster IPspaces.
 

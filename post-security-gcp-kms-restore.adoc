@@ -3,14 +3,25 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'post-security-gcp-kms-restore.html'
+keywords: 'gcp kms restore,snapshot restore,google cloud security,svm keys restore,key manager restore'
 summary: 'Restore keys for an SVM from a Google Cloud KMS'
 ---
 
 = Restore keys for an SVM from a Google Cloud KMS
+:imagesdir: ./media/
+
+[.lead]
+Restores the keys for an SVM from a Google Cloud KMS when you need to recover or reinstate secure key management configurations.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/security/gcp-kms/{uuid}/restore`#
 
-*Introduced In:* 9.10
+== Introduced in
+
+ONTAP 9.10
+
+== Usage notes
 
 Restores the keys for an SVM from a configured Google Cloud KMS.
 
