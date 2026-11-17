@@ -3,14 +3,25 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'get-svm-svms-top-metrics-directories.html'
+keywords: 'svm directories,io activity,top metrics,svm uuid,throughput filter,iops filter'
 summary: 'List directories with the most I/O activity'
 ---
 
 = List directories with the most I/O activity
+:imagesdir: ./media/
+
+[.lead]
+Retrieves and examines directories with the highest I/O activity, helping you identify areas of intensive data operations.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/svm/svms/{svm.uuid}/top-metrics/directories`#
 
-*Introduced In:* 9.11
+== Introduced in
+
+ONTAP 9.11
+
+== Usage notes
 
 Retrieves a list of directories with the most IO activity.
 

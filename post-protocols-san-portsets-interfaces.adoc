@@ -3,14 +3,25 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'post-protocols-san-portsets-interfaces.html'
+keywords: 'portset interfaces,add interfaces,network interface,unique identifier,portset uuid'
 summary: 'Add portset network interfaces'
 ---
 
 = Add portset network interfaces
+:imagesdir: ./media/
+
+[.lead]
+Adds network interfaces to a portset, enhancing the ability to manage and configure storage area network resources efficiently. Use this endpoint to include additional interfaces in a portset setup for expanded connectivity options.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/protocols/san/portsets/{portset.uuid}/interfaces`#
 
-*Introduced In:* 9.9
+== Introduced in
+
+ONTAP 9.9
+
+== Usage notes
 
 Adds one or more interfaces to a portset.
 

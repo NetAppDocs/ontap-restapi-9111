@@ -3,14 +3,25 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'get-storage-snaplock-event-retention-operations.html'
+keywords: 'snaplock operations,snaplock event-retention,ebr operations,event retention,retention operations,snaplock storage'
 summary: 'Retrieve EBR operations'
 ---
 
 = Retrieve EBR operations
+:imagesdir: ./media/
+
+[.lead]
+Retrieves the existing EBR operations, providing insight into the current event-based retention activities.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/storage/snaplock/event-retention/operations`#
 
-*Introduced In:* 9.7
+== Introduced in
+
+ONTAP 9.7
+
+== Usage notes
 
 Retrieves a list of all EBR operations.
 

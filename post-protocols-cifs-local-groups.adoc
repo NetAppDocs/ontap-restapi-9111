@@ -3,16 +3,23 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'post-protocols-cifs-local-groups.html'
+keywords: 'local group,group configuration,svm local group,cifs local group,local group creation,cifs group'
 summary: 'Create a local group configuration for an SVM'
 ---
 
 = Create a local group configuration for an SVM
+:imagesdir: ./media/
+
+[.lead]
+Creates a local group configuration for a specified SVM to manage user access and permissions within the storage virtual machine environment. This is typically used to organize and control access to resources by grouping users together.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/protocols/cifs/local-groups`#
 
-*Introduced In:* 9.9
+== Introduced in
 
-Creates the local group configuration for the specified SVM.
+ONTAP 9.9
 
 == Important notes
 

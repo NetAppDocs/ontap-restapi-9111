@@ -3,16 +3,27 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'delete-protocols-san-iscsi-services-.html'
+keywords: 'iscsi service,iscsi delete,iscsi disable,san protocols,svm uuid'
 summary: 'Delete an iSCSI service'
 ---
 
 = Delete an iSCSI service
+:imagesdir: ./media/
+
+[.lead]
+Deletes an iSCSI service when you need to remove it from your configuration. This operation is typically performed after disabling the service to ensure a clean removal.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-delete]#DELETE# [.api-doc-code-block]#`/protocols/san/iscsi/services/{svm.uuid}`#
 
-*Introduced In:* 9.6
+== Introduced in
 
-Deletes an iSCSI service. An iSCSI service must be disabled before it can be deleted.
+ONTAP 9.6
+
+== Usage notes
+
+An iSCSI service must be disabled before it can be deleted.
 
 == Related ONTAP commands
 

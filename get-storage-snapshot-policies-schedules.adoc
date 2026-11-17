@@ -3,14 +3,25 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'get-storage-snapshot-policies-schedules.html'
+keywords: 'snapshot policy,policy schedules,snapshot schedules,snapmirror label,schedule uuid,max records'
 summary: 'Retrieve Snapshot copy policy schedules'
 ---
 
 = Retrieve Snapshot copy policy schedules
+:imagesdir: ./media/
+
+[.lead]
+Retrieves Snapshot copy policy schedules to review the timing and frequency settings of your Snapshot copies. This helps you ensure that your data protection strategies align with your storage policies.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/storage/snapshot-policies/{snapshot_policy.uuid}/schedules`#
 
-*Introduced In:* 9.8
+== Introduced in
+
+ONTAP 9.8
+
+== Usage notes
 
 Retrieves a collection of Snapshot copy policy schedules.
 

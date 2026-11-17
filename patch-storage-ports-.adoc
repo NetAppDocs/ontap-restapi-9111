@@ -3,16 +3,23 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'patch-storage-ports-.html'
+keywords: 'storage port,port update,port modify,node uuid,port name'
 summary: 'Update a storage port'
 ---
 
 = Update a storage port
+:imagesdir: ./media/
+
+[.lead]
+Updates a storage port to modify its configuration or change its operational status. Use this operation to manage the network connectivity of your storage system effectively.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-patch]#PATCH# [.api-doc-code-block]#`/storage/ports/{node.uuid}/{name}`#
 
-*Introduced In:* 9.11
+== Introduced in
 
-Updates a storage port.
+ONTAP 9.11
 
 == Related ONTAP commands
 

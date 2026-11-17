@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'manage_snapshot_copy_policies.html'
+keywords: 'snapshot copy policies,snapshot retention,snapshot schedule,cluster wide,storage object'
 summary: 'Manage Snapshot copy policies'
 ---
 
 = Manage Snapshot copy policies
+:imagesdir: ./media/
 
-
+[.lead]
+Use Snapshot copy policy APIs to manage scheduled Snapshot creation on storage objects. These endpoints help you create, retrieve, update, and delete Snapshot copy policies, ensuring that Snapshot copies are generated according to defined schedules and retention settings.
 
 == Overview
 

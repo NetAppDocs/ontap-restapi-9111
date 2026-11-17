@@ -3,14 +3,25 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'get-protocols-cifs-local-groups.html'
+keywords: 'local groups,cifs,svm,group members,show members,filter records'
 summary: 'Retrieve local groups for all SVMs'
 ---
 
 = Retrieve local groups for all SVMs
+:imagesdir: ./media/
+
+[.lead]
+Obtains a list of local groups across all Storage Virtual Machines (SVMs). This information is useful for managing access and permissions within your network environment.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/protocols/cifs/local-groups`#
 
-*Introduced In:* 9.9
+== Introduced in
+
+ONTAP 9.9
+
+== Usage notes
 
 Retrieves the local groups for all of the SVMs.
 

@@ -3,14 +3,25 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'delete-cloud-targets-.html'
+keywords: 'cloud target,delete target,delete job,uuid delete,storage aggregate'
 summary: 'Delete a cloud target'
 ---
 
 = Delete a cloud target
+:imagesdir: ./media/
+
+[.lead]
+Deletes a cloud target identified by its UUID, initiating a job to remove the specified resource.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-delete]#DELETE# [.api-doc-code-block]#`/cloud/targets/{uuid}`#
 
-*Introduced In:* 9.6
+== Introduced in
+
+ONTAP 9.6
+
+== Usage notes
 
 Deletes the cloud target specified by the UUID. This request starts a job and returns a link to that job.
 

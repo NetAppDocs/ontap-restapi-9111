@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'manage_iscsi_services.html'
+keywords: 'iscsi services,manage iscsi,svm iscsi,iscsi performance,iscsi create'
 summary: 'Manage iSCSI services'
 ---
 
 = Manage iSCSI services
+:imagesdir: ./media/
 
-
+[.lead]
+The iSCSI services REST API enables you to manage the properties of iSCSI targets within Storage Virtual Machines (SVMs). Use these endpoints to create, update, delete, and discover iSCSI services, which are essential for configuring iSCSI initiator access.
 
 == Overview
 

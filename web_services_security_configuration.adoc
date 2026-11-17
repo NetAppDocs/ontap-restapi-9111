@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'web_services_security_configuration.html'
+keywords: 'web services security,security configuration,data svm,svm security,certificate management'
 summary: 'Web services security configuration'
 ---
 
 = Web services security configuration
+:imagesdir: ./media/
 
-
+[.lead]
+Access and modify the web services security configuration for each data SVM using this API. These endpoints help ensure secure interactions with web services by updating configuration settings such as certificate details and enabling client or OCSP features.
 
 You can use this API to update and retrieve the web services security configuration for each data SVM.
 

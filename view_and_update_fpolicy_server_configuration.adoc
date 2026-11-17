@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'view_and_update_fpolicy_server_configuration.html'
+keywords: 'fpolicy server,connection status,external servers,svm cluster,update connection'
 summary: 'View and update FPolicy server configuration'
 ---
 
 = View and update FPolicy server configuration
+:imagesdir: ./media/
 
-
+[.lead]
+View and update the configuration of FPolicy server connections to manage how external servers interact with your system. Use these endpoints to display current connection statuses and make necessary updates for optimal server communication.
 
 == Overview
 

@@ -3,16 +3,23 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'get-cluster-metrocluster-operations-.html'
+keywords: 'metrocluster operation,specific operation,cluster information,operation details,unique identifier,metrocluster uuid'
 summary: 'Retrieve information about a MetroCluster operation'
 ---
 
 = Retrieve information about a MetroCluster operation
+:imagesdir: ./media/
+
+[.lead]
+Retrieves information about a specific MetroCluster operation to gain insights into its current status and details.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/cluster/metrocluster/operations/{uuid}`#
 
-*Introduced In:* 9.8
+== Introduced in
 
-Retrieves information about a specific MetroCluster operation.
+ONTAP 9.8
 
 == Related ONTAP Commands
 

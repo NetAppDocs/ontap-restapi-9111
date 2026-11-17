@@ -3,14 +3,25 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'post-security-gcp-kms.html'
+keywords: 'google cloud configuration,kms setup,key ring location,project id,key encryption,application credentials'
 summary: 'Create a Google Cloud KMS configuration for an SVM'
 ---
 
 = Create a Google Cloud KMS configuration for an SVM
+:imagesdir: ./media/
+
+[.lead]
+Configures a Google Cloud KMS for a specified SVM to manage encryption keys securely. Use this configuration to integrate Google Cloud's key management service with your ONTAP environment.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/security/gcp-kms`#
 
-*Introduced In:* 9.9
+== Introduced in
+
+ONTAP 9.9
+
+== Usage notes
 
 Configures the Google Cloud KMS configuration for the specified SVM.
 

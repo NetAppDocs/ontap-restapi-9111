@@ -3,16 +3,23 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'get-protocols-cifs-shares.html'
+keywords: 'cifs shares,retrieve shares,share properties,vserver cifs,access enumeration,offline files'
 summary: 'Retrieve CIFS shares'
 ---
 
 = Retrieve CIFS shares
+:imagesdir: ./media/
+
+[.lead]
+Retrieves CIFS shares to access configuration details and status information for each share in your environment.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/protocols/cifs/shares`#
 
-*Introduced In:* 9.6
+== Introduced in
 
-Retrieves CIFS shares.
+ONTAP 9.6
 
 == Related ONTAP commands
 

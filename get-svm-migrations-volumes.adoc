@@ -3,14 +3,25 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'get-svm-migrations-volumes.html'
+keywords: 'svm migration,volume transfer,status check,migration uuid,transfer status'
 summary: 'Retrieve transfer status of volumes in an SVM'
 ---
 
 = Retrieve transfer status of volumes in an SVM
+:imagesdir: ./media/
+
+[.lead]
+Retrieves the transfer status of volumes within a Storage Virtual Machine (SVM) to monitor or assess current data transfer activities.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/svm/migrations/{svm_migration.uuid}/volumes`#
 
-*Introduced In:* 9.10
+== Introduced in
+
+ONTAP 9.10
+
+== Usage notes
 
 Retrieves the transfer status of the volumes in the SVM.
 

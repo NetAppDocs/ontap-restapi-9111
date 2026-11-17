@@ -3,16 +3,23 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'get-network-fc-fabrics.html'
+keywords: 'fibre channel,fabrics retrieval,network fabrics,fcp topology,fcp zone'
 summary: 'Retrieve FC fabrics'
 ---
 
 = Retrieve FC fabrics
+:imagesdir: ./media/
+
+[.lead]
+Retrieves Fibre Channel fabrics, which provides information about the available fabrics in your storage network. Use this endpoint to access specific details necessary for managing and configuring your network's Fibre Channel topology.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/network/fc/fabrics`#
 
-*Introduced In:* 9.11
+== Introduced in
 
-Retrieves Fibre Channel fabrics.
+ONTAP 9.11
 
 == Expensive properties
 

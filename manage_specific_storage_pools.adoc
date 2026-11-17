@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'manage_specific_storage_pools.html'
+keywords: 'storage pools,capacity management,storage pool expansion,modify storage,delete storage pool'
 summary: 'Manage specific storage pools'
 ---
 
 = Manage specific storage pools
+:imagesdir: ./media/
 
-
+[.lead]
+Explore storage pool management endpoints to modify and update properties of specific storage pools within your environment. Use these endpoints to dynamically adjust pool configurations, simulate expansions, or manage spare capacity distribution across nodes effectively.
 
 == Updating storage pools
 

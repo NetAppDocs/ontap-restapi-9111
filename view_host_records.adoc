@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'view_host_records.html'
+keywords: 'ip address,hostname retrieval,host records,name services,svm uuid,ipv4 addresses'
 summary: 'View host records'
 ---
 
 = View host records
+:imagesdir: ./media/
 
-
+[.lead]
+Retrieve IP addresses and hostnames using host records to facilitate network management within your environment. Use these endpoints to display the IP address of a specified hostname and vice-versa, ensuring accurate network configurations.
 
 == Overview
 

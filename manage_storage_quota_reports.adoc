@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'manage_storage_quota_reports.html'
+keywords: 'quota reports,storage quota,file consumption,space consumption,flexvol volume,flexgroup volume'
 summary: 'Manage storage quota reports'
 ---
 
 = Manage storage quota reports
+:imagesdir: ./media/
 
-
+[.lead]
+Quota report APIs retrieve current file and space consumption data for users, groups, or qtrees within FlexVol or FlexGroup volumes. Use these endpoints to obtain detailed quota reports associated with specific volumes in your ONTAP environment.
 
 == Overview
 

@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'manage_cluster_license_managers.html'
+keywords: 'license manager,capacity pools,license instance,deploy vm,license ip'
 summary: 'Manage cluster license managers'
 ---
 
 = Manage cluster license managers
+:imagesdir: ./media/
 
-
+[.lead]
+Manage license manager information for your cluster to ensure accurate configuration with the capacity pools licensing model. If the license manager instance changes its IP address, update the configuration using this API.
 
 == Overview
 

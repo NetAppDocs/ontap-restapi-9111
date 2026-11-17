@@ -3,16 +3,23 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'get-storage-snaplock-compliance-clocks-.html'
+keywords: 'snaplock compliance,compliance clock,node uuid,snaplock storage,compliance node'
 summary: 'Retrieve a SnapLock ComplianceClock for a node'
 ---
 
 = Retrieve a SnapLock ComplianceClock for a node
+:imagesdir: ./media/
+
+[.lead]
+Retrieves the SnapLock ComplianceClock for a specific node to monitor or manage regulatory compliance timelines associated with your data storage.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/storage/snaplock/compliance-clocks/{node.uuid}`#
 
-*Introduced In:* 9.7
+== Introduced in
 
-Retrieves the SnapLock ComplianceClock for a specific node.
+ONTAP 9.7
 
 == Related ONTAP commands
 

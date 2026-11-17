@@ -3,14 +3,25 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'get-storage-snaplock-litigations-files.html'
+keywords: 'snaplock litigation,litigation files,files list,litigation records,order results'
 summary: 'Display files for a litigation ID'
 ---
 
 = Display files for a litigation ID
+:imagesdir: ./media/
+
+[.lead]
+Displays the list of files associated with a specified litigation ID. This helps you review and manage files relevant to legal inquiries or obligations.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/storage/snaplock/litigations/{litigation.id}/files`#
 
-*Introduced In:* 9.7
+== Introduced in
+
+ONTAP 9.7
+
+== Usage notes
 
 Displays the list of files for the specified litigation ID.
 

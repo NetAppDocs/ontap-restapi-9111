@@ -3,14 +3,25 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'get-protocols-nfs-connected-clients.html'
+keywords: 'nfs configuration,svm nfs,nfs clients,connected clients,nfs export policy,nfs idle duration'
 summary: 'Retrieve NFS configuration for an SVM'
 ---
 
 = Retrieve NFS configuration for an SVM
+:imagesdir: ./media/
+
+[.lead]
+Retrieves the NFS configuration for a specific SVM, gaining insight into the setup of NFS services within your storage environment. Use this endpoint to understand and manage NFS settings effectively for your storage virtual machines.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/protocols/nfs/connected-clients`#
 
-*Introduced In:* 9.7
+== Introduced in
+
+ONTAP 9.7
+
+== Usage notes
 
 Retrieves the NFS configuration of SVMs.
 

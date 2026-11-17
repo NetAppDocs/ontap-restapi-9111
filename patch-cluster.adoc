@@ -3,14 +3,25 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'patch-cluster.html'
+keywords: 'cluster configuration,cluster update,modify cluster,ontap cluster,ssl security'
 summary: 'Update a cluster configuration'
 ---
 
 = Update a cluster configuration
+:imagesdir: ./media/
+
+[.lead]
+Updates the cluster configuration to reflect changes or adjustments needed after the initial setup. This operation is typically performed to optimize cluster settings or integrate new resources.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-patch]#PATCH# [.api-doc-code-block]#`/cluster`#
 
-*Introduced In:* 9.6
+== Introduced in
+
+ONTAP 9.6
+
+== Usage notes
 
 Updates the cluster configuration after the cluster is created.
 

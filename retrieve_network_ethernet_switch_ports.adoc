@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'retrieve_network_ethernet_switch_ports.html'
+keywords: 'ethernet switch,network ports,port status,mac address,vlan configuration,full duplex'
 summary: 'Retrieve network Ethernet switch ports'
 ---
 
 = Retrieve network Ethernet switch ports
+:imagesdir: ./media/
 
-
+[.lead]
+Retrieve detailed information about Ethernet switch ports within your cluster or storage networks using this API. Access port status and configuration data through a GET operation, essential for monitoring network connections and performance.
 
 == Overview
 

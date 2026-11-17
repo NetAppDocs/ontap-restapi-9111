@@ -3,16 +3,23 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'get-protocols-audit.html'
+keywords: 'audit configurations,security events,log rotation,file operations,cifs logon logoff'
 summary: 'Retrieve audit configurations'
 ---
 
 = Retrieve audit configurations
+:imagesdir: ./media/
+
+[.lead]
+Retrieves audit configurations to view the current settings for auditing activities. This helps you monitor and manage auditing within the system.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/protocols/audit`#
 
-*Introduced In:* 9.6
+== Introduced in
 
-Retrieves audit configurations.
+ONTAP 9.6
 
 == Related ONTAP commands
 

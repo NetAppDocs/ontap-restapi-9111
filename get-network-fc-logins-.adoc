@@ -3,14 +3,25 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'get-network-fc-logins-.html'
+keywords: 'fc login,retrieve fc login,world wide port name,fc interface,initiator wwpn'
 summary: 'Retrieve an FC login'
 ---
 
 = Retrieve an FC login
+:imagesdir: ./media/
+
+[.lead]
+Retrieves information about a Fibre Channel (FC) login to understand the current login status and details within your storage network. This can help you monitor connectivity and troubleshoot issues related to FC interfaces.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/network/fc/logins/{interface.uuid}/{initiator.wwpn}`#
 
-*Introduced In:* 9.6
+== Introduced in
+
+ONTAP 9.6
+
+== Usage notes
 
 Retrieves an FC login.
 

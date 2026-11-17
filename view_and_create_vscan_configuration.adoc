@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'view_and_create_vscan_configuration.html'
+keywords: 'vscan configuration,ontap vscan,vscan protection,storage antivirus,vscan create'
 summary: 'View and create Vscan configuration'
 ---
 
 = View and create Vscan configuration
+:imagesdir: ./media/
 
-
+[.lead]
+Vscan endpoints help safeguard your data by integrating third-party antivirus solutions with ONTAP's flexible scanning capabilities. Use these endpoints to configure how and when files are scanned, with scanning operations managed by external servers hosting antivirus software.
 
 == Overview
 

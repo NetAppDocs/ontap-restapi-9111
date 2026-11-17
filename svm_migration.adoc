@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'svm_migration.html'
+keywords: 'svm migration,source cluster,destination cluster,cluster peering,volume status,transfer status'
 summary: 'SVM migration'
 ---
 
 = SVM migration
+:imagesdir: ./media/
 
-
+[.lead]
+Use the SVM migration endpoints to transfer a Storage Virtual Machine (SVM) from one cluster to another. These endpoints help you initiate, monitor, and control the migration process, including pausing, resuming, or aborting operations. Execute migration tasks from the destination cluster, ensuring cluster peering is established beforehand.
 
 = Overview
 

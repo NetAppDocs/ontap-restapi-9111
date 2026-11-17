@@ -3,16 +3,25 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'patch-application-consistency-groups-.html'
+keywords: 'consistency group,storage elements,update storage,add namespaces,nvme namespaces,volume update'
 summary: 'Update a consistency group'
 ---
 
 = Update a consistency group
+:imagesdir: ./media/
+
+[.lead]
+Updates a consistency group by adding new storage elements without affecting existing ones. This operation allows you to expand or modify the consistency group as needed.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-patch]#PATCH# [.api-doc-code-block]#`/application/consistency-groups/{uuid}`#
 
-*Introduced In:* 9.10
+== Introduced in
 
-Updates a consistency group.
+ONTAP 9.10
+
+== Usage notes
 
 NOTE: that this operation will never delete storage elements. You can specify only elements that should be added to the consistency group regardless of existing storage objects.
 
@@ -194,6 +203,9 @@ a|This is a reference to the Snapshot copy policy.
           "provisioning_options": {
             "action": "string"
           },
+          "subsystem_map": [
+            {}
+          ],
           "uuid": "1cd8a442-86d1-11e0-ae1c-123478563412"
         }
       ],
@@ -278,6 +290,9 @@ a|This is a reference to the Snapshot copy policy.
       "provisioning_options": {
         "action": "string"
       },
+      "subsystem_map": [
+        {}
+      ],
       "uuid": "1cd8a442-86d1-11e0-ae1c-123478563412"
     }
   ],

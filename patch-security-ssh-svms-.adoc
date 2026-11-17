@@ -3,16 +3,23 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'patch-security-ssh-svms-.html'
+keywords: 'ssh server,svm configuration,ssh security,ssh ciphers,key exchange,mac algorithms'
 summary: 'Update the SSH server configuration for an SVM'
 ---
 
 = Update the SSH server configuration for an SVM
+:imagesdir: ./media/
+
+[.lead]
+Updates the SSH server configuration for a specified SVM, adjusting settings such as encryption algorithms, key exchange methods, and authentication retry limits to meet your security requirements.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-patch]#PATCH# [.api-doc-code-block]#`/security/ssh/svms/{svm.uuid}`#
 
-*Introduced In:* 9.10
+== Introduced in
 
-Updates the SSH server configuration for the specified SVM.
+ONTAP 9.10
 
 == Optional parameters
 

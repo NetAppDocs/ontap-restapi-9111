@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'manage_disks.html'
+keywords: 'storage disk,manage disks,retrieve disks,disk information,disk ownership'
 summary: 'Manage disks'
 ---
 
 = Manage disks
+:imagesdir: ./media/
 
-
+[.lead]
+Retrieve detailed information about all disks within the cluster using the storage disk GET API. These endpoints are essential for monitoring disk status and inventory as part of cluster management.
 
 == Retrieving storage disk information
 

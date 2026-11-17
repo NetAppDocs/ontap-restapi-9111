@@ -3,14 +3,25 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'delete-protocols-san-lun-maps--reporting-nodes-.html'
+keywords: 'delete reporting node,lun map removal,ha partner removal,igroup identifier,san protocols'
 summary: 'Remove a reporting node and its HA partner from a LUN map'
 ---
 
 = Remove a reporting node and its HA partner from a LUN map
+:imagesdir: ./media/
+
+[.lead]
+Removes a reporting node and its high-availability partner from a LUN map. Use this endpoint when you need to update or reconfigure your storage environment by modifying LUN mappings.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-delete]#DELETE# [.api-doc-code-block]#`/protocols/san/lun-maps/{lun.uuid}/{igroup.uuid}/reporting-nodes/{uuid}`#
 
-*Introduced In:* 9.10
+== Introduced in
+
+ONTAP 9.10
+
+== Usage notes
 
 Removes a reporting node and its HA partner from a LUN map.
 

@@ -3,14 +3,25 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'post-cluster-peers.html'
+keywords: 'cluster peering,remote address,ip interface,passphrase,svm peering,encryption mechanism'
 summary: 'Create a peering relationship'
 ---
 
 = Create a peering relationship
+:imagesdir: ./media/
+
+[.lead]
+Creates a peering relationship to establish a connection between clusters, optionally specifying the IP interfaces for communication. Use this operation when you want to facilitate collaborations or data exchanges between separate cluster environments.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/cluster/peers`#
 
-*Introduced In:* 9.6
+== Introduced in
+
+ONTAP 9.6
+
+== Usage notes
 
 Creates a peering relationship and, optionally, the IP interfaces it will use. There are two methods used to create a peering relationship:
 

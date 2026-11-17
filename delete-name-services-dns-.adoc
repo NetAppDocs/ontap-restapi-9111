@@ -3,14 +3,25 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'delete-name-services-dns-.html'
+keywords: 'dns configuration,dns domain,delete dns,specified svm,svm uuid'
 summary: 'Delete a DNS domain configuration'
 ---
 
 = Delete a DNS domain configuration
+:imagesdir: ./media/
+
+[.lead]
+Removes a DNS domain configuration for a specified SVM, ensuring the domain settings are no longer applied.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-delete]#DELETE# [.api-doc-code-block]#`/name-services/dns/{svm.uuid}`#
 
-*Introduced In:* 9.6
+== Introduced in
+
+ONTAP 9.6
+
+== Usage notes
 
 Deletes DNS domain configuration of the specified SVM.
 

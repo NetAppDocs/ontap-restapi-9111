@@ -3,16 +3,23 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'get-storage-namespaces.html'
+keywords: 'nvme namespaces,retrieve namespaces,nvme subsystem,namespace statistics,ontap storage'
 summary: 'Retrieve NVMe namespaces'
 ---
 
 = Retrieve NVMe namespaces
+:imagesdir: ./media/
+
+[.lead]
+Retrieves NVMe namespaces to access detailed information about the namespace configuration. This is typically used when you need to analyze or manage NVMe storage resources within your environment.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/storage/namespaces`#
 
-*Introduced In:* 9.6
+== Introduced in
 
-Retrieves NVMe namespaces.
+ONTAP 9.6
 
 == Expensive properties
 

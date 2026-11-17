@@ -3,16 +3,23 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'patch-storage-shelves-.html'
+keywords: 'shelf led,location update,storage shelves,modify shelf,led patch'
 summary: 'Update a shelf location LED'
 ---
 
 = Update a shelf location LED
+:imagesdir: ./media/
+
+[.lead]
+Updates the shelf location LED settings to manage the visual indicators on storage shelves effectively. Use this endpoint to ensure accurate LED configuration for monitoring and maintenance tasks.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-patch]#PATCH# [.api-doc-code-block]#`/storage/shelves/{uid}`#
 
-*Introduced In:* 9.10
+== Introduced in
 
-Updates a shelf location LED.
+ONTAP 9.10
 
 == Related ONTAP commands
 

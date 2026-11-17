@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'view_and_manage_cluster_jobs.html'
+keywords: 'cluster jobs,job management,long-running operations,job state,asynchronous operations'
 summary: 'View and manage cluster jobs'
 ---
 
 = View and manage cluster jobs
+:imagesdir: ./media/
 
-
+[.lead]
+Use this API to view and manage cluster jobs, which represent asynchronous operations. You can retrieve job information or update the job state for supported operations, helping you oversee long-running processes effectively.
 
 == Overview
 

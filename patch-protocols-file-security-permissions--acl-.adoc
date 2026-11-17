@@ -3,14 +3,25 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'patch-protocols-file-security-permissions--acl-.html'
+keywords: 'file security,permissions,acl update,sacl,dacl,access control'
 summary: 'Update SACLs or DACLs'
 ---
 
 = Update SACLs or DACLs
+:imagesdir: ./media/
+
+[.lead]
+Updates SACLs or DACLs to modify the security or discretionary access control lists on files and directories. This is useful when you need to adjust permissions and access settings in your storage environment.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-patch]#PATCH# [.api-doc-code-block]#`/protocols/file-security/permissions/{svm.uuid}/{path}/acl/{user}`#
 
-*Introduced In:* 9.9
+== Introduced in
+
+ONTAP 9.9
+
+== Usage notes
 
 Updates the SACLs/DACLs
 You must keep the following points in mind while using these endpoints:

@@ -3,14 +3,25 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'get-storage-snaplock-event-retention-policies.html'
+keywords: 'snaplock,svm,retention policies,event retention,event policies'
 summary: 'Retrieve event retention policies for an SVM'
 ---
 
 = Retrieve event retention policies for an SVM
+:imagesdir: ./media/
+
+[.lead]
+Retrieves event retention policies for a storage virtual machine (SVM), giving you insight into the policies in place for retaining events.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/storage/snaplock/event-retention/policies`#
 
-*Introduced In:* 9.7
+== Introduced in
+
+ONTAP 9.7
+
+== Usage notes
 
 Retrieves all event retention policies for an SVM.
 

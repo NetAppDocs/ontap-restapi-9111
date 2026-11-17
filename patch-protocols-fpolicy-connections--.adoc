@@ -3,16 +3,23 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'patch-protocols-fpolicy-connections--.html'
+keywords: 'fpolicy server,server status,node uuid,policy name,svm uuid,engine connect'
 summary: 'Update the FPolicy server status'
 ---
 
 = Update the FPolicy server status
+:imagesdir: ./media/
+
+[.lead]
+Updates the status of an FPolicy server to manage its operational state. This is typically used when configuring or troubleshooting FPolicy server connections.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-patch]#PATCH# [.api-doc-code-block]#`/protocols/fpolicy/{svm.uuid}/connections/{node.uuid}/{policy.name}/{server}`#
 
-*Introduced In:* 9.10
+== Introduced in
 
-Updates the status of an FPolicy server.
+ONTAP 9.10
 
 == Related ONTAP commands
 

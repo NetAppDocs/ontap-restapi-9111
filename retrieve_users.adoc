@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'retrieve_users.html'
+keywords: 'iops,throughput,io activity,read operations,volume activity'
 summary: 'Retrieve users'
 ---
 
 = Retrieve users
+:imagesdir: ./media/
 
-
+[.lead]
+Retrieve a list of users with the most IO activity for a specified volume by using this API. By specifying the type of IO activity with the `top_metric` parameter, you can gain insights into user activity based on `iops` or `throughput` metrics, with results ordered accordingly.
 
 == Overview
 

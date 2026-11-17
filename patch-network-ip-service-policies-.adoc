@@ -3,17 +3,23 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'patch-network-ip-service-policies-.html'
+keywords: 'network interfaces,service policy,update policy,service update,network service'
 summary: 'Update a service policy for network interfaces'
 ---
 
 = Update a service policy for network interfaces
+:imagesdir: ./media/
+
+[.lead]
+Updates a service policy for network interfaces to change the way services are applied to your network configurations. Use this endpoint to modify existing policies as your network needs evolve.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-patch]#PATCH# [.api-doc-code-block]#`/network/ip/service-policies/{uuid}`#
 
-*Introduced In:* 9.8
+== Introduced in
 
-Updates a service policy for network interfaces.
-
+ONTAP 9.8
 
 == Parameters
 

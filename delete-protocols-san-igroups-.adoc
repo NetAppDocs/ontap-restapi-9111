@@ -3,16 +3,23 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'delete-protocols-san-igroups-.html'
+keywords: 'initiator group,igroup delete,san protocols,delete initiator,uuid identifier'
 summary: 'Delete an initiator group'
 ---
 
 = Delete an initiator group
+:imagesdir: ./media/
+
+[.lead]
+Deletes an initiator group to remove its association with storage resources and protocols, effectively managing access control within your network environment.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-delete]#DELETE# [.api-doc-code-block]#`/protocols/san/igroups/{uuid}`#
 
-*Introduced In:* 9.6
+== Introduced in
 
-Deletes an initiator group.
+ONTAP 9.6
 
 == Related ONTAP commands
 

@@ -3,16 +3,23 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'post-protocols-cifs-home-directory-search-paths.html'
+keywords: 'home directory,cifs protocol,search path,svm namespace,ontap commands,cifs server'
 summary: 'Create a home directory search path'
 ---
 
 = Create a home directory search path
+:imagesdir: ./media/
+
+[.lead]
+Creates a home directory search path to define the locations within the SVM namespace where home directories are searched for. This helps ensure that the correct directories are found when accessing CIFS shares.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/protocols/cifs/home-directory/search-paths`#
 
-*Introduced In:* 9.6
+== Introduced in
 
-Creates a home directory search path.
+ONTAP 9.6
 
 == Required properties
 

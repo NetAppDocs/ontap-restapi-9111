@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'perform_bulk_import_for_cifs_user_groups.html'
+keywords: 'bulk import,cifs users,group membership,uniform resource identifier,svm status'
 summary: 'Perform bulk import for CIFS user groups'
 ---
 
 = Perform bulk import for CIFS user groups
+:imagesdir: ./media/
 
-
+[.lead]
+Perform bulk imports of CIFS local users, groups, and group membership data from a specified URI to update your CIFS configurations efficiently. Use these endpoints to initiate imports, check the status of previous operations, and upload import status updates.
 
 == Overview
 

@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'manage_files_and_directories.html'
+keywords: 'file management,file properties,directory listing,symlink creation,qos policy'
 summary: 'Manage files and directories'
 ---
 
 = Manage files and directories
+:imagesdir: ./media/
 
-
+[.lead]
+Utilize file and directory management endpoints to perform operations such as reading, writing, and modifying properties. Retrieve lists and detailed information about files and directories, manage their lifecycle, and apply QoS policies according to your requirements.
 
 == Overview
 

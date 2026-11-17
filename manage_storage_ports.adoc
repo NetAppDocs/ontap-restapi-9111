@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'manage_storage_ports.html'
+keywords: 'storage ports,port information,cluster storage,port retrieval,port modification'
 summary: 'Manage storage ports'
 ---
 
 = Manage storage ports
+:imagesdir: ./media/
 
-
+[.lead]
+Retrieve comprehensive information about storage ports in the cluster to facilitate network and hardware management. Use these endpoints to access details necessary for monitoring port configurations and statuses.
 
 == Retrieving storage port information
 

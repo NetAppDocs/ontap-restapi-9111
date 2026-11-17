@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'manage_http_proxy_configuration.html'
+keywords: 'http proxy,svm configuration,cluster ipspace,http proxy creation,http proxy update,http proxy delete'
 summary: 'Manage HTTP proxy configuration'
 ---
 
 = Manage HTTP proxy configuration
+:imagesdir: ./media/
 
-
+[.lead]
+Configure and manage HTTP proxy settings for Storage Virtual Machines (SVMs) and Cluster IPspaces. Use these endpoints to retrieve, create, update, or delete HTTP proxy configurations as needed.
 
 == Overview
 

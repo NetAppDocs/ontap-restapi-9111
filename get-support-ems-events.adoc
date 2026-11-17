@@ -3,14 +3,25 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'get-support-ems-events.html'
+keywords: 'event log,ems events,observed events,event severity,log message,node uuid'
 summary: 'Retrieve observed events'
 ---
 
 = Retrieve observed events
+:imagesdir: ./media/
+
+[.lead]
+Retrieves a list of observed events, helping you monitor and analyze the system's activities and occurrences. This can assist in troubleshooting or ensuring system health by reviewing logged events.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/support/ems/events`#
 
-*Introduced In:* 9.6
+== Introduced in
+
+ONTAP 9.6
+
+== Usage notes
 
 Retrieves a collection of observed events.
 

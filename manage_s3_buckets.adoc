@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'manage_s3_buckets.html'
+keywords: 's3 bucket management,s3 user,object namespace,s3 access controls,logical used size,qos policy'
 summary: 'Manage S3 buckets'
 ---
 
 = Manage S3 buckets
+:imagesdir: ./media/
 
-
+[.lead]
+Manage S3 buckets to organize and store objects within a defined namespace. Use these endpoints to create, retrieve, update, and delete buckets associated with specific SVMs, ensuring efficient data access and administrative control.
 
 == Overview
 

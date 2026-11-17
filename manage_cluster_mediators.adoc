@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'manage_cluster_mediators.html'
+keywords: 'cluster mediator,metrocluster configuration,ip address,async job monitoring,delete mediator'
 summary: 'Manage cluster mediators'
 ---
 
 = Manage cluster mediators
+:imagesdir: ./media/
 
-
+[.lead]
+Use the Manage Cluster Mediators API endpoints to add, remove, and monitor mediators in a MetroCluster over IP configuration. These endpoints help ensure the configuration's stability by enabling you to verify mediator status and details, facilitating seamless setup and removal processes.
 
 == Overview
 

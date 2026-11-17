@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'view_and_manage_metrocluster_configurations.html'
+keywords: 'metrocluster setup,switchover operation,switchback operation,dr group configuration,mediator assisted switchover'
 summary: 'View and manage MetroCluster configurations'
 ---
 
 = View and manage MetroCluster configurations
+:imagesdir: ./media/
 
-
+[.lead]
+Explore MetroCluster configurations with this API to create, manage operations, and access critical information for both local and partner clusters. Use GET requests for status and configuration data, PATCH for switchover and switchback operations, and POST to establish new MetroCluster setups.
 
 = Overview
 

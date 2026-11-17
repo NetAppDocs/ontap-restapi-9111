@@ -3,14 +3,25 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'delete-cluster-ntp-servers-.html'
+keywords: 'ntp server,delete ntp,external ntp,ontap ntp,cluster ntp,ntp configuration'
 summary: 'Delete an external NTP server'
 ---
 
 = Delete an external NTP server
+:imagesdir: ./media/
+
+[.lead]
+Removes an external NTP server from the configuration to stop its use by ONTAP for time synchronization. This action is typically performed when updating or decommissioning time server resources.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-delete]#DELETE# [.api-doc-code-block]#`/cluster/ntp/servers/{server}`#
 
-*Introduced In:* 9.7
+== Introduced in
+
+ONTAP 9.7
+
+== Usage notes
 
 Deletes an external NTP server used by ONTAP.
 

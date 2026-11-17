@@ -3,14 +3,25 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'delete-security-roles--privileges-.html'
+keywords: 'privilege tuple,resource-qualified endpoint,role management,snapshot deletion,wildcard volumes'
 summary: 'Delete a privilege tuple from the role'
 ---
 
 = Delete a privilege tuple from the role
+:imagesdir: ./media/
+
+[.lead]
+Removes a privilege tuple from a role, updating the role's access by deleting specified permissions. This operation is typically used when you need to adjust or restrict access levels for security management purposes.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-delete]#DELETE# [.api-doc-code-block]#`/security/roles/{owner.uuid}/{name}/privileges/{path}`#
 
-*Introduced In:* 9.6
+== Introduced in
+
+ONTAP 9.6
+
+== Usage notes
 
 Deletes a privilege tuple (of REST URI or command/command directory path, its access level and an optional query) from the role. The REST URI can be a resource-qualified endpoint. Currently, the only supported resource-qualified endpoints are _/api/storage/volumes/{volume.uuid}/snapshots_ and _/api/storage/volumes/*/snapshots_. "*" is a wildcard character denoting "all" volumes.
 

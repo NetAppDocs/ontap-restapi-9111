@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'view_cifs_active_file_sessions.html'
+keywords: 'cifs sessions,cifs files,open files,session management,file information'
 summary: 'View CIFS active file sessions'
 ---
 
 = View CIFS active file sessions
+:imagesdir: ./media/
 
-
+[.lead]
+Access CIFS active file session endpoints to view and manage currently opened files within your ONTAP environment. Utilize these endpoints to track open files across sessions, retrieve specific file information, or close files based on unique identifiers.
 
 == Overview
 

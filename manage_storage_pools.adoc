@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'manage_storage_pools.html'
+keywords: 'storage pools,cluster management,shared storage,flash capacity,hdd aggregates'
 summary: 'Manage storage pools'
 ---
 
 = Manage storage pools
+:imagesdir: ./media/
 
-
+[.lead]
+Manage storage pools to efficiently distribute flash capacity across cache tiers in HDD aggregates within an HA pair. Retrieve detailed information about shared storage pools in the cluster, or create new instances with specific properties to meet your storage needs.
 
 == Retrieving storage pool information
 

@@ -3,16 +3,23 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'post-protocols-cifs-local-users.html'
+keywords: 'local user,svm configuration,password requirements,cifs protocol,vserver local-user'
 summary: 'Create a local user configuration for an SVM'
 ---
 
 = Create a local user configuration for an SVM
+:imagesdir: ./media/
+
+[.lead]
+Creates a local user configuration for an SVM. This is typically done to define access controls and authentication settings specific to the SVM environment.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/protocols/cifs/local-users`#
 
-*Introduced In:* 9.9
+== Introduced in
 
-Creates the local user configuration for an SVM.
+ONTAP 9.9
 
 == Important notes
 

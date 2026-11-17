@@ -3,14 +3,25 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'get-snapmirror-relationships-transfers.html'
+keywords: 'snapmirror transfers,retrieve snapmirror,relationship uuid,ongoing transfers,snapmirror relationship'
 summary: 'Retrieve ongoing SnapMirror transfers for a relationship'
 ---
 
 = Retrieve ongoing SnapMirror transfers for a relationship
+:imagesdir: ./media/
+
+[.lead]
+Retrieves the list of ongoing SnapMirror transfers associated with a specific relationship. Use this information to monitor transfer progress and manage replication tasks effectively.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/snapmirror/relationships/{relationship.uuid}/transfers`#
 
-*Introduced In:* 9.6
+== Introduced in
+
+ONTAP 9.6
+
+== Usage notes
 
 Retrieves the list of ongoing SnapMirror transfers for the specified relationship.
 
